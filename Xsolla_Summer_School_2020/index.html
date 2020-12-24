@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+		<script src="js/jquery-3.5.1.min.js"></script>
+		<script src="js/main.js" defer></script>
+		<title>Event List - task4 Xsolla Summer School 2020</title>
+	</head>
+	<body>
+		<div class="rectangle">
+			<h1 class="title">Event Listing</h1>
+			<div class="filter-line">
+				<div class="filter-text">City:</div>
+				<select class="combo filter-text" onchange="changeCity(this.value)"></select>
+				<div class="filter-text">Month:</div>
+				<select class="combo filter-text" onchange="changeDate(this.value)" style="margin-right: 0;"></select>
+			</div>
+			<div class="events-table">
+				<ul class="event-column"></ul>
+				<ul class="event-column" style="margin-right:0px;"></ul>
+			</div>
+		</div>
+	</body>
+</html>

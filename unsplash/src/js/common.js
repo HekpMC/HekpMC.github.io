@@ -15,7 +15,7 @@ let unsplash = new Unsplash({
    // Полный адрес страницы авторизации приложения (Redirect URI)
    // Важно: этот адрес обязательно должен быть указан в настройках приложения
    // на сайте Unsplash API/Developers
-   callbackUrl: "http://localhost:8080/" //"https://hekpmc.github.io/unsplash/dist/index.html"
+   callbackUrl: "https://hekpmc.github.io/unsplash/dist/index.html"
 });
 
 // Генерируем адрес страницы аутентификации на unsplash.com

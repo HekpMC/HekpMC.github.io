@@ -1,0 +1,355 @@
+html{
+	background: #1F2326;		
+}
+
+ul,li{
+	/* Блочная модель */
+    padding: 0;
+    margin: 0;
+    /* Типографика */
+    list-style: none;
+}
+
+.contaner{
+	position: absolute;
+	z-index: -2;
+	margin: auto;
+	background: #1F2326;
+}
+
+/* ---- Header ---- */
+.сontanerHeader{
+	background:#292C31;
+	padding: 10px 37px 10px 33px;
+	display: flex;
+	align-items: center;
+	position: fixed;
+	z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.unsplashLogo{
+	cursor: pointer;
+}
+
+.navItems{
+	overflow: hidden;
+	width: 100%;
+}
+.itemNav{
+	float: left;
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: Montserrat;
+	font-size: 18px;
+	color: #FFFFFF;
+	margin-left: 65px;	
+	align-items: center;
+}
+.itemNav:hover{
+	border-bottom: 3px solid white;
+}
+.itemNav.active {
+	border-bottom: 3px solid white;
+}
+.itemIcon {
+	float: left;
+	display: block;
+	text-align: center;
+	padding: 5px 16px 10px 16px;
+	font-size: 30px;
+	color: #FFFFFF;
+	margin-left: 65px;	
+	align-items: center;
+	cursor: pointer;
+}
+
+.userIcon{	
+	margin-left: auto;	
+	border-radius: 50%;
+	height: 40px;
+	width: 40px;
+	cursor: pointer;	
+}
+.userName{
+	float: left;
+	display: block;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: Montserrat;
+	font-size: 18px;
+	color: #FFFFFF;	
+	margin-left: 16px;
+	cursor: pointer;	
+}
+
+/* ---- grid ---- */
+.grid{
+	width: max-content;
+	margin: 85px auto 0;
+	padding-top: 30px;	
+	columns: 400px 6;
+	column-gap: 30px;
+}
+.grid-item {
+	position: relative;
+	margin-bottom: 30px;	
+}
+.photo{
+	position: relative;
+	border-radius: 5px;	
+}
+
+/* ---- PhotoUserInterface ---- */
+.photoInterface{
+	background-color:black;	
+}
+.autorIcon{
+	position: absolute;	
+	height: 40px;
+	width: 40px;	
+	left: 30px;
+	bottom: 30px;
+	z-index: 1;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.autorName{
+	position: absolute;
+	left: 90px;
+	bottom: 40px;
+	margin: 0;
+	z-index: 1;	
+	font-size: 18px;	
+	color: #d0d0d1;	
+	cursor: pointer;
+}
+.autorName:hover{
+	color: #fff;
+}
+.photoButtons{
+	position: absolute;
+	height: 25px;
+	width: 35px;
+	z-index: 1;
+	border-radius: 2px;
+	color: #7b7d80;
+	border: #FFFFFF solid 1px;
+	cursor: pointer;	
+}
+.photoButtons:hover{
+	color: #292C31;
+}
+.likedButton{
+	position: absolute;
+	height: 25px;
+	width: 35px;
+	z-index: 1;
+	border-radius: 2px;
+	color: #FFFFFF;
+	background-color: #f15151;
+	border: #f15151 solid 1px;
+	cursor: pointer;	
+}
+.buttonDownload{
+	right: 30px;
+	bottom: 40px;
+}
+.buttonLike{
+	right: 70px;
+	top: 30px;
+}
+.buttonAdd{	
+	right: 30px;
+	top: 30px;
+	font-size: 22px;
+}
+.gradient{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 3px;
+	left: 0;
+	color: #111;	
+	background-image: linear-gradient(180deg,rgba(0,0,0,.34) 0,rgba(0,0,0,.338) 3.5%,rgba(0,0,0,.324) 7%,rgba(0,0,0,.306) 10.35%,rgba(0,0,0,.285) 13.85%,rgba(0,0,0,.262) 17.35%,rgba(0,0,0,.237) 20.85%,rgba(0,0,0,.213) 24.35%,rgba(0,0,0,.188) 27.85%,rgba(0,0,0,.165) 31.35%,rgba(0,0,0,.144) 34.85%,rgba(0,0,0,.126) 38.35%,rgba(0,0,0,.112) 41.85%,rgba(0,0,0,.103) 45.35%,rgba(0,0,0,.1) 48.85%,rgba(0,0,0,.103) 52.35%,rgba(0,0,0,.112) 55.85%,rgba(0,0,0,.126) 59.35%,rgba(0,0,0,.144) 62.85%,rgba(0,0,0,.165) 66.35%,rgba(0,0,0,.188) 69.85%,rgba(0,0,0,.213) 73.35%,rgba(0,0,0,.237) 76.85%,rgba(0,0,0,.262) 80.35%,rgba(0,0,0,.285) 83.85%,rgba(0,0,0,.306) 87.35%,rgba(0,0,0,.324) 90.85%,rgba(0,0,0,.338) 94.35%,rgba(0,0,0,.347) 97.85%,rgba(0,0,0,.35));
+	cursor: zoom-in;
+}
+
+.expandedBackground{
+	position: fixed;	
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: auto;
+	height: auto;
+	z-index: 3;
+	cursor: zoom-out;
+}
+.сontanerExpanded{
+	position: absolute;	
+	top: 100px;
+	left: 100px;
+	bottom: 100px;
+	right: 100px;
+	width: auto;
+	height: auto;
+	display: flex;
+	border-radius: 5px;
+	background-color: white;
+	cursor: auto;
+}
+.expandedPhoto{
+	position: absolute;
+	top: 80px;
+	left: 20px;
+	right: 20px;
+	bottom: 20px;
+	width: auto;
+	height: auto;
+}
+.expandedHeader{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	right: 20px;
+	width: auto;
+	height: 40px;
+	display: flex;
+	align-items: center;	
+}
+.expandedAutorIcon{
+	height: 40px;
+	width: 40px;	
+	border-radius: 50%;	
+	cursor: pointer;
+}
+.expandedAutorName{
+	margin-left: 20px;
+	font-size: 24px;
+	color: #292C31;	
+	cursor: pointer;
+}
+.expandedButtons{
+	position: absolute;
+	height: 35px;
+	width: 45px;
+	top: 2px;
+	border-radius: 2px;
+	color: #7b7d80;	
+	border:#7b7d80 solid 1px;
+	cursor: pointer;	
+}
+.expandedButtons:hover{
+	border-color: #292C31;
+	color: #292C31;
+}
+
+
+.expandedLike{
+	right: 190px;
+	font-size: 20px;
+	padding-bottom: 5px;
+}
+.expandedAdd{	
+	right: 140px;
+	font-size: 28px;
+}
+.expandedDownload{
+	right: 64px;
+	width: 70px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+.expandedCombo{	
+	right: 20px;
+	border-top-left-radius: 0px;
+	border-bottom-left-radius: 0px;
+}
+
+
+@media screen and (max-width: 2600px)
+{
+	.grid{		
+		columns: 400px 5;
+	}	
+}
+
+@media screen and (max-width: 2200px)
+{
+	.grid{		
+		columns: 400px 4;
+	}
+	.iN9,.iN8{
+		display: none;
+	}		
+}
+@media screen and (max-width: 1800px)
+{
+	.grid{		
+		columns: 400px 3;
+	}
+	.iN7,.iN6{
+		display: none;
+	}	
+}
+@media screen and (max-width: 1300px)
+{
+	.grid{		
+		columns: 400px 2;
+	}
+	.iN5,.iN4{
+		display: none;
+	}		
+}
+@media screen and (max-width: 1030px)
+{
+	.iN3{
+		display: none;
+	}		
+}
+@media screen and (max-width: 900px)
+{
+	.grid{		
+		columns: 400px 1;
+	}	
+}
+@media screen and (max-width: 810px)
+{
+	.iN2{
+		display: none;
+	}	
+}
+@media screen and (max-width: 600px)
+{
+	.iN1{
+		display: none;
+	}	
+}
+
+
+
+@font-face {
+	font-family: 'Druk Wide';
+	src: url('../fonts/Druk Wide Bold/Druk Wide Bold.woff2') format('woff2'),
+	  url('../fonts/Druk Wide Bold/Druk Wide Bold.woff') format('woff'),
+	  url('../fonts/Druk Wide Bold/Druk Wide Bold.ttf') format('ttf');
+	font-display: swap;
+	  font-style: normal;
+	  font-weight: bold;
+	  line-height: 1;
+  }
+@font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/Montserrat Bold/Montserrat Bold.woff2') format('woff2'),
+	  url('../fonts/Montserrat Bold/Montserrat Bold.woff') format('woff'),
+	  url('../fonts/Montserrat Bold/Montserrat Bold.ttf') format('ttf');
+	font-display: swap;
+	  font-style: normal;
+	  font-weight: bold;
+	  line-height: 1;
+  }

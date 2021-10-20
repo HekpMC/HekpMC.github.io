@@ -65,21 +65,35 @@ Show
 	PlayEffect Orange
 	PlayAlertSoundPositional 10 100		
 
-## Divination (ДОПИСАТЬ!!!)
-Hide #Div Trash
+## Divination
+Hide #//Div Trash
     Class "Divination"
 	BaseType "The Twins" "The Carrion Crow" "A Mother's Parting Gift" "Call to the First Ones" "Lantador's Lost Love" "Boon of Justice" "Rain of Chaos" "The Scholar" "Destined to Crumble" "The Hermit" "The Metalsmith's Gift" "Prosperity" "Struck by Lightning" "Thunderous Skies" "The Incantation" "Turn the Other Cheek" "The King's Blade" "The Web" "The Warden" "The Inoculated" "The Sigil" "The Scarred Meadow" "The Surgeon" "The Lunaris Priestess" "The Wolf's Shadow" "The Blazing Fire" "Death" "The Betrayal" "The Lich" "The Rabid Rhoa" "The Sun" 
-Show #Div T1
+Show #//Div T1
     Class "Divination"
-	BaseType "Abandoned Wealth"	
-    SetFontSize 45
+	BaseType == "Abandoned Wealth" "Alluring Bounty" "Beauty Through Death" "Brother's Stash" "Burning Blood" "Deadly Joy" "Gift of Asenath" "House of Mirrors" "Immortal Resolve" "Love Through Ice" "Luminous Trove" "Nook's Crown" "Pride of the First Ones" "Seven Years Bad Luck" "Succor of the Sinless" "The Cheater" "The Craving" "The Demon" "The Doctor" "The Fiend" "The Immortal" "The Nurse" "The Samurai's Eye" "Unrequited Love"
+	SetFontSize 45
 	MinimapIcon 0 Yellow Square 
 	PlayEffect Yellow
 	PlayAlertSoundPositional 9 300
-Show #Div Other
+Show #//Div T2
+    Class "Divination"
+	BaseType == "A Note in the Wind" "Broken Promises" "Chaotic Disposition" "Council of Cats" "Dark Dreams" "Dementophobia" "Desecrated Virtue" "Draped in Dreams" "Hunter's Reward" "Keeper's Corruption" "The Academic" "The Artist" "The Bargain" "The Celestial Justicar" "The Dragon's Heart" "The Enlightened" "The Escape" "The Eye of Terror" "The Greatest Intentions" "The Gulf" "The Iron Bard" "The Life Thief" "The Long Con" "The Offspring" "The Patient" "The Price of Loyalty" "The Progeny of Lunaris" "The Sacrifice" "The Saint's Treasure" "The Spark and the Flame" "The Strategist" "The Sustenance" "The Void" "The White Knight" "Wealth and Power" "Winter's Embrace"
+	SetFontSize 45
+	MinimapIcon 1 Yellow Square 
+	PlayEffect Yellow
+	PlayAlertSoundPositional 9 200
+Show #//Div T3
+    Class "Divination"
+	BaseType == "A Familiar Call" "A Modest Request" "Ambitious Obsession" "Azyran's Reward" "Blessing of God" "Boon of the First Ones" "Bowyer's Dream" "Brotherhood in Exile" "Divine Justice" "Dying Anguish" "Fateful Meeting" "Humility" "Lachrymal Necrosis" "Mawr Blaidd" "Peaceful Moments" "Pride Before the Fall" "Reckless Ambition" "Remembrance" "Squandered Prosperity" "Terrible Secret of Space" "The Astromancer" "The Bitter Blossom" "The Bones" "The Breach" "The Cartographer" "The Celestial Stone" "The Chosen" "The Damned" "The Dapper Prodigy" "The Dark Mage" "The Dreamer" "The Eldritch Decay" "The Endless Darkness" "The Enthusiasts" "The Eternal War" "The Ethereal" "The Hive of Knowledge" "The Hoarder" "The Innocent" "The Jeweller's Boon" "The Landing" "The Mayor" "The Mind's Eyes" "The Obscured" "The Offering" "The Old Man" "The Pact" "The Polymath" "The Porcupine" "The Primordial" "The Professor" "The Queen" "The Risk" "The Sephirot" "The Soul" "The Tinkerer's Table" "The Undaunted" "The Valkyrie" "The Warlord" "The Wolven King's Bite" "The World Eater" "Vanity" "Void of the Elements"
+	SetFontSize 40
+	MinimapIcon 1 Yellow Square 
+	PlayEffect Yellow
+	PlayAlertSoundPositional 9 100
+Show #//Div Other
     Class "Divination"
     PlayAlertSoundPositional 9 100
-	MinimapIcon 0 Blue Square 
+	MinimapIcon 1 Blue Square 
 	PlayEffect Blue
 #-----------------------------------------------------------------------
 ## Maps
@@ -293,7 +307,6 @@ Show
 	MinimapIcon 2 Yellow Pentagon	
 	PlayAlertSoundPositional 16 100 
 #-------------------------------------------
-
 ## Gems
 Show
     Class "Gems"
@@ -488,7 +501,6 @@ Show #//Expedition Base
 	PlayEffect Yellow
 	PlayAlertSoundPositional 16 100
 #-----------------------------------------------------------------------
-
 ## Currency Change Items	
 Show
 	Corrupted False
@@ -524,8 +536,6 @@ Show
     Quality > 15
     Class "Flask"
 #-----------------------------------------------------------------------
-	
-
 ## League added  mods
 Show #Betrayal Mod Items
 	HasExplicitMod "Catarina's Veiled" "Elreon's Veiled"
@@ -533,30 +543,30 @@ Show #Betrayal Mod Items
 	SetBorderColor 215 215 215 
 	MinimapIcon 0 Yellow Star 
 	PlayEffect Yellow
+Show #Bestiary Mod Items
+	HasExplicitMod "of Craiceann" "of Saqawal" "of Farrul" "of Fenumus"
+	SetFontSize 39
+	SetBorderColor 127 127 255 
+	MinimapIcon 0 Blue Star 
+	PlayEffect Blue
+Show #Incrsion Mod Items
+	HasExplicitMod "Tacati's" "Citaqualotl's" "Matatl's" "Topotante's"  "Xopec's"  "Guatelitzi's"  "of Tacati"  "of Citaqualotl" "of Matatl" "of Puhuarte" "of Guatelitzi"
+	SetFontSize 39
+	SetBorderColor 127 127 255 
+	MinimapIcon 0 Blue Star 
+	PlayEffect Blue
+Show #Delve Mod Items
+	HasExplicitMod "Subterranean" "of the Underground"
+	SetFontSize 39
+	SetBorderColor 127 127 255 
+	MinimapIcon 0 Blue Star 
+	PlayEffect Blue
 Show #Betrayal Mod Items
 	HasExplicitMod "Veiled" "Leo's Veiled" "Vorici's Veiled" "Haku's Veiled" "Tora's Veiled" "Vagan's Veiled" "Guff's Veiled" "It That Fled's Veiled" "Gravicius' Veiled" "Korell's Veiled" "Rin's Veiled" "of the Veil" "of Janus' Veil" "of Hillock's Veil" "of Jorgin's Veil" "of Cameria's Veil" "of Aisling's Veil" "of Riker's Veil"
 	SetFontSize 39
 	SetBorderColor 215 215 215 
 	MinimapIcon 2 White Star 
 	PlayEffect White
-Show #Delve Mod Items
-	HasExplicitMod "Subterranean" "of the Underground" "of Weaponcraft" "of Spellcraft" "of Crafting"
-	SetFontSize 39
-	SetBorderColor 127 127 255 
-	MinimapIcon 2 Blue Star 
-	PlayEffect Blue
-Show #Incrsion Mod Items
-	HasExplicitMod "Tacati's" "Citaqualotl's" "Matatl's" "Topotante's"  "Xopec's"  "Guatelitzi's"  "of Tacati"  "of Citaqualotl" "of Matatl" "of Puhuarte" "of Guatelitzi"
-	SetFontSize 39
-	SetBorderColor 127 127 255 
-	MinimapIcon 2 Blue Star 
-	PlayEffect Blue
-Show #Bestiary Mod Items
-	HasExplicitMod "of Craiceann" "of Saqawal" "of Farrul" "of Fenumus"
-	SetFontSize 39
-	SetBorderColor 127 127 255 
-	MinimapIcon 2 Blue Star 
-	PlayEffect Blue
 Show #Warband Mod Items 
 	HasExplicitMod "Brinerot" "Mutewind" "Redblade" "Betrayer's" "Deceiver's" "Turncoat's" 
 	SetFontSize 39
@@ -565,93 +575,8 @@ Show #Warband Mod Items
 	PlayEffect Blue
 #-----------------------------------------------------------------------	
 
-## Top Common Base
-Show
-	Identified False
-    BaseType "Vaal Regalia" "Two-Toned Boots" "Steel Ring" "Gripped Gloves" "Spiked Gloves" "Fingerless Silk Gloves" "Bone Helmet" "Hubris Circlet" "Sorcerer Gloves" "Sorcerer Boots" "Titanium Spirit Shield" "Astral Plate" "Glorious Plate" "Assassin's Garb" "Zodiac Leather" "Triumphant Lamellar" "Saintly Chainmail" "Carnal Armour" "Titan Greaves" "Slink Boots" "Dragonscale Boots" "Crusader Boots" "Murder Boots" "Titan Gauntlets" "Slink Gloves" "Dragonscale Gauntlets" "Legion Gloves" "Murder Mitts" "Eternal Burgonet" "Lion Pelt" "Nightmare Bascinet" "Praetor Crown" "Deicide Mask" "Widowsilk Robe" "General's Brigandine" "Sadist Garb"
-    Rarity = Rare
-    ItemLevel > 59
-
-Show
-	Identified False
-    BaseType "Convoking Wand" "Jewelled Foil" "Spiraled Foil" "Fancy Foil" "Harpy Rapier" "Gemini Claw" "Twin Claw" "Terror Claw" "Imperial Claw" "Throat Stabber" "Fleshripper" 
-    Rarity = Rare
-    ItemLevel > 59
-
-Show
-	Identified False
-    Class "Wand" "Sceptre"
-	Rarity = Rare
-    ItemLevel > 59	
-
-
-
-
-
-Show
-	Class "Jewel"
-	Rarity Rare
-	SetBorderColor 255 200 0
-Show
-    Class "Abyss Jewel"
-	ItemLevel >= 80
-	SetBorderColor 141 240 75
-	
-	
-
-Show
-    BaseType "Vaal Regalia" "Two-Toned Boots" "Steel Ring" "Gripped Gloves" "Spiked Gloves" "Fingerless Silk Gloves" "Bone Helmet" "Hubris Circlet" "Sorcerer Gloves" "Sorcerer Boots" "Titanium Spirit Shield" "Astral Plate" "Eternal Burgonet" "Lion Pelt" "Nightmare Bascinet"
-    ItemLevel > 85
-
-
-## leveling trash
-#-------------------------------------------
-
-Show 
-	ItemLevel <= 10
-	LinkedSockets > 2
-	SetFontSize 39
-	Rarity >= Magic
-
-Show 
-	ItemLevel <= 20
-	BaseType "Iron Ring"
-	SetFontSize 39
-
-Show 
-	ItemLevel <= 67
-	Class "Gloves" "Helmet" "Boots"
-	SetFontSize 39
-	Sockets >= 4
-
-Show 
-	ItemLevel <= 67
-	Class "Gloves" "Helmet" "Boots"
-	SetFontSize 39
-	LinkedSockets = 4
-
-Show 
-	ItemLevel <= 65
-	Rarity > Magic
-
-Show
-    LinkedSockets = 5
-	ItemLevel <= 65 	
-
-Show 
-	ItemLevel <= 42
-	SetFontSize 39
-	Class "Flask"
-
-Show	
-	Class "Utility Flasks" 
-
-#-------------------------------------------	
-
-
-
 ## Noteworthy gears
-#-------------------------------------------
+  ##phys weapons
 Show #phys weapons (Magic)
 	Corrupted False
 	Rarity = Magic
@@ -661,7 +586,6 @@ Show #phys weapons (Magic)
 	SetBorderColor 255 200 0
 	MinimapIcon 2 Blue Star 
 	PlayEffect Blue
-
 Show #phys weapons (Rare)
 	HasExplicitMod "Cruel" "Tyrannical" "Merciless"
 	HasExplicitMod "Conqueror's" "Emperor's" "Dictator's" "Razor-sharp" "Tempered" "Flaring"
@@ -670,45 +594,59 @@ Show #phys weapons (Rare)
 	SetBorderColor 255 200 0 
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow
-
 Show #phys weapons (Rare)
 	HasExplicitMod "Conqueror's" "Emperor's" "Dictator's"
-	HasExplicitMod "Cruel" "Tyrannical" "Merciless" "Razor-sharp" "Tempered" "Flaring"
+	HasExplicitMod "Razor-sharp" "Tempered" "Flaring"
 	HasExplicitMod "of Fame" "of Infamy" "of Celebration" "of Puncturing" "of Penetrating" "of Incision" "of Fury" "of Ferocity" "of Destruction"
 	SetFontSize 40
 	SetBorderColor 255 200 0   
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow
-
-Show #phys weapons (Rare)
-	HasExplicitMod "Razor-sharp" "Tempered" "Flaring"
-	HasExplicitMod "Cruel" "Tyrannical" "Merciless" "Conqueror's" "Emperor's" "Dictator's"
-	HasExplicitMod "of Fame" "of Infamy" "of Celebration" "of Puncturing" "of Penetrating" "of Incision" "of Fury" "of Ferocity" "of Destruction"
-	SetFontSize 40
-	SetBorderColor 255 200 0  
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow
-
+  #---------------------------------------
+  ##elem weapons
 Show #elem weapons (Magic)
 	Corrupted False
 	Rarity = Magic
-	HasExplicitMod "Shocking" "Discharging" "Electrocuting" "Glaciated" "Polar" "Entombing"
+	HasExplicitMod "Vapourising" "Discharging" "Electrocuting" "Crystalising" "Polar" "Entombing" "Blasting" "Cremating" "Carbonising"
 	HasExplicitMod "of Fame" "of Infamy" "of Celebration" "of Puncturing" "of Penetrating" "of Incision" "of Fury" "of Ferocity" "of Destruction"
 	SetFontSize 40
 	SetBorderColor 255 200 0
 	MinimapIcon 2 Blue Star 
 	PlayEffect Blue
-
 Show #elem weapons (Rare)
-	HasExplicitMod "Shocking" "Discharging" "Electrocuting"
-	HasExplicitMod "Glaciated" "Polar" "Entombing"
+	HasExplicitMod "Vapourising" "Discharging" "Electrocuting"
+	HasExplicitMod "Crystalising" "Polar" "Entombing" "Blasting" "Cremating" "Carbonising"
 	HasExplicitMod "of Fame" "of Infamy" "of Celebration" "of Puncturing" "of Penetrating" "of Incision" "of Fury" "of Ferocity" "of Destruction"
 	SetFontSize 40
 	SetBorderColor 255 200 0  
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow
-
-#-------------------------------------------
+Show #elem weapons (Rare)
+	HasExplicitMod "Crystalising" "Polar" "Entombing"
+	HasExplicitMod "Blasting" "Cremating" "Carbonising"
+	HasExplicitMod "of Fame" "of Infamy" "of Celebration" "of Puncturing" "of Penetrating" "of Incision" "of Fury" "of Ferocity" "of Destruction"
+	SetFontSize 40
+	SetBorderColor 255 200 0  
+	MinimapIcon 2 Yellow Star 
+	PlayEffect Yellow
+  #---------------------------------------
+  ## +all level weapons
+Show #Staves (Rare)
+    Class "Staves"
+	HasExplicitMod "Magister's" "Lava Conjurer's" "Winter Beckoner's" "Tempest Master's" "Splintermind's" "Tecton's" 
+	SetFontSize 40
+	SetBorderColor 255 200 0  
+	MinimapIcon 2 Yellow Star 
+	PlayEffect Yellow
+Show # one hand (Rare)
+    Class ! "Staves"
+	HasExplicitMod "Magister's" "Flame Shaper's" "Frost Singer's" "Thunderhand's" "Mad Lord's" "Lithomancer's" 
+	SetFontSize 40
+	SetBorderColor 255 200 0  
+	MinimapIcon 2 Yellow Star 
+	PlayEffect Yellow
+  #---------------------------------------  
+  ## Summoner +3 helmets (Magic) 
 Show  # Summoner +3 helmets (Magic) 
  	Corrupted False 
  	HasExplicitMod "Necromancer's" 
@@ -717,7 +655,6 @@ Show  # Summoner +3 helmets (Magic)
 	SetBorderColor 255 200 0
 	MinimapIcon 2 Blue Star 
 	PlayEffect Blue	
-
 Show  # Summoner +3 helmets (Rare) 
  	Corrupted False 
  	HasExplicitMod "Necromancer's" 
@@ -725,93 +662,73 @@ Show  # Summoner +3 helmets (Rare)
  	SetFontSize 40
 	SetBorderColor 255 200 0
 	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow	
-
-Show  # HP Res/str helmets (Rare) 
+	PlayEffect Yellow
+  #--------------------------------------- 	
+  ## HP Res/str helmets
+Show  # HP Res/str(Magic) 
  	Corrupted False  	
+	Class "Helmet"
 	HasExplicitMod "Virile" "Athlete's" "Fecund"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Leviathan" "of the Titan" "of the Gods" "of the Godslayer"
-	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth"
+	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth" "of the Maelstrom" "of the Lightning" "of Ephij" "of the Leviathan" "of the Titan" "of the Gods" "of the Godslayer"
+ 	Rarity = Magic
+	SetFontSize 40
+	SetBorderColor 255 200 0
+	MinimapIcon 2 Blue Star 
+	PlayEffect Blue	
+Show # HP str Res (Rare) 
+ 	Corrupted False  	
+	Class "Helmet"
+	HasExplicitMod "Virile" "Athlete's" "Fecund"
+	HasExplicitMod "of the Leviathan" "of the Titan" "of the Gods" "of the Godslayer"
+	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth" 
  	SetFontSize 40
 	SetBorderColor 255 200 0
 	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow
-
-Show  # HP Res/str helmets (Rare) 
+	PlayEffect Yellow	
+Show  # HP 2Res (Rare) 
  	Corrupted False  	
+	Class "Helmet"
 	HasExplicitMod "Virile" "Athlete's" "Fecund"
-	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Leviathan" "of the Titan" "of the Gods" "of the Godslayer"
+	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast"
 	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth"
  	SetFontSize 40
 	SetBorderColor 255 200 0
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow	
-
-Show # HP Res/str helmets (Rare) 
+Show # HP 2Res (Rare) 
  	Corrupted False  	
+	Class "Helmet"
 	HasExplicitMod "Virile" "Athlete's" "Fecund"
-	HasExplicitMod "of the Volcano" "of the Magma" "of Tzteosh" "of the Leviathan" "of the Titan" "of the Gods" "of the Godslayer"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of Expulsion" "of Exile" "of Bameth"
+	HasExplicitMod "of the Volcano" "of the Magma" "of Tzteosh" 
+	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of Expulsion" "of Exile" "of Bameth"
  	SetFontSize 40
 	SetBorderColor 255 200 0
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow	
-
-Show # HP Res/str helmets 
+Show # HP 2Res (Rare)
  	Corrupted False  	
+	Class "Helmet"
 	HasExplicitMod "Virile" "Athlete's" "Fecund"
-	HasExplicitMod "of Expulsion" "of Exile" "of Bameth" "of the Leviathan" "of the Titan" "of the Gods" "of the Godslayer"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow	
-
-Show # ES Res/int helmets
-	Corrupted False 
-	HasExplicitMod "Inculcated" "Interpolated" "Inspired" "Evanescent" "Unreal" "Illusory" "Dauntless" "Indomitable" "Unassailable"
- 	HasExplicitMod "Summoner's" "Necromancer's" "Naga's" "Djinn's" "Seraphim's" "Wasp's" "Dragonfly's" "Hummingbird's" "Pulsing" "Seething" "Blazing"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Savant" "of the Virtuoso" "of the Genius" "of the Polymath"
-	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth"
+	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij"
+	HasExplicitMod "of Expulsion" "of Exile" "of Bameth"
  	SetFontSize 40
 	SetBorderColor 255 200 0
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow
-
+  #---------------------------------------
+  ## ES Res/int helmets
 Show # ES Res/int helmets
 	Corrupted False 
+	Class "Helmet"
 	HasExplicitMod "Inculcated" "Interpolated" "Inspired" "Evanescent" "Unreal" "Illusory" "Dauntless" "Indomitable" "Unassailable"
  	HasExplicitMod "Summoner's" "Necromancer's" "Naga's" "Djinn's" "Seraphim's" "Wasp's" "Dragonfly's" "Hummingbird's" "Pulsing" "Seething" "Blazing"
-	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Savant" "of the Virtuoso" "of the Genius" "of the Polymath"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth"
+	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Savant" "of the Virtuoso" "of the Genius" "of the Polymath" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth"
  	SetFontSize 40
 	SetBorderColor 255 200 0
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow
+  #---------------------------------------
 
-Show # ES Res/int helmets
-	Corrupted False 
-	HasExplicitMod "Inculcated" "Interpolated" "Inspired" "Evanescent" "Unreal" "Illusory" "Dauntless" "Indomitable" "Unassailable"
- 	HasExplicitMod "Summoner's" "Necromancer's" "Naga's" "Djinn's" "Seraphim's" "Wasp's" "Dragonfly's" "Hummingbird's" "Pulsing" "Seething" "Blazing"
-	HasExplicitMod "of the Volcano" "of the Magma" "of Tzteosh" "of the Savant" "of the Virtuoso" "of the Genius" "of the Polymath"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of Expulsion" "of Exile" "of Bameth"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow
-
-Show # ES Res/int helmets
-	Corrupted False 
-	HasExplicitMod "Inculcated" "Interpolated" "Inspired" "Evanescent" "Unreal" "Illusory" "Dauntless" "Indomitable" "Unassailable"
- 	HasExplicitMod "Summoner's" "Necromancer's" "Naga's" "Djinn's" "Seraphim's" "Wasp's" "Dragonfly's" "Hummingbird's" "Pulsing" "Seething" "Blazing"
-	HasExplicitMod "of Expulsion" "of Exile" "of Bameth" "of the Savant" "of the Virtuoso" "of the Genius" "of the Polymath"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow	
-
-#-------------------------------------------	
 Show  # ManaRF boots
  	Corrupted False 
 	Class "Boots"
@@ -919,7 +836,6 @@ Show # ES/Move Res/int boots
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow
 
-#-------------------------------------------	
 Show # ES Res/int Gloves
 	Corrupted False 
 	Class "Gloves"
@@ -968,7 +884,7 @@ Show # ES Res/int Gloves
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow
 
-#-------------------------------------------	
+
 Show  # HP Res/str Body (Rare) 
  	Corrupted False  
 	Class "Body Armour"	
@@ -1061,7 +977,7 @@ Show # ES Res/int Body
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow
 
-#-------------------------------------------	
+	
 Show  # HP Res/str Shield (Rare) 
  	Corrupted False  
 	Class "Shields"	
@@ -1177,7 +1093,7 @@ Show # ES Res/int Shield
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow
 
-#-------------------------------------------
+
 Show  # HP/ES Res/str Belts (Rare)   
 	Class "Belts"	
 	HasExplicitMod "Virile" "Athlete's" "Fecund" "Incandescent" "Resplendent" "Dazzling"
@@ -1240,7 +1156,7 @@ Show  # Flask Belt (Rare)
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow
 
-#-------------------------------------------
+
 Show  # ManaRF Ring 
 	Class "Ring"
 	HasExplicitMod "Mazarine" "Blue" "Zaffre" "Ultramarine"
@@ -1371,7 +1287,7 @@ Show # ES Res/int Ring (Rare)
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow
 
-#-------------------------------------------
+
 Show  # ManaRF Amulets
 	Class "Amulets"
 	HasExplicitMod "Mazarine" "Blue" "Zaffre" "Ultramarine"
@@ -1502,7 +1418,7 @@ Show  # ES Res/int Amulets (Rare)
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow	
 
-#-------------------------------------------
+
 Show  # HP Crit Quivers (Rare) 
 	Class "Quiver"	
 	HasExplicitMod "Virile" "Athlete's" "Fecund"
@@ -1514,44 +1430,98 @@ Show  # HP Crit Quivers (Rare)
 	PlayEffect Yellow
 
 #-------------------------------------------
-
+	
+## Craft Top Base	
 Show
-    BaseType "Talisman" "Stygian Vise"
-    SetBorderColor 141 240 75
-	MinimapIcon 2 Green Star 
-	PlayEffect Green
-
-
+    BaseType "Vaal Regalia" "Gripped Gloves" "Hubris Circlet" "Sorcerer Gloves" "Sorcerer Boots" "Titanium Spirit Shield" "Astral Plate" "Eternal Burgonet" "Lion Pelt" "Nightmare Bascinet"
+    ItemLevel > 85
 Show
-    BaseType "Bone Helmet"
+    BaseType "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Fingerless Silk Gloves" "Steel Ring" "Fugitive Boots"
     SetBorderColor 255 255 255
 	ItemLevel > 85
     SetFontSize 45
     PlayAlertSoundPositional 3 200
 	MinimapIcon 1 White Star 
 	PlayEffect White	
-
 Show
-    BaseType "Opal Ring" "Iolite Ring" "Artillery Quiver" "Apothecary's Gloves" "Fugitive Boots" "Crystal Belt" "Seaglass Amulet" "Cerulean Ring" "Vermillion Ring" "Grasping Mail" "Unset Amulet"
+    BaseType "Vermillion Ring" "Crystal Belt" 
     SetBorderColor 255 255 255
     SetFontSize 45
     PlayAlertSoundPositional 3 200
 	MinimapIcon 1 White Star 
 	PlayEffect White
+#-------------------------------------------		
+## UnIdentified Top Base	
 Show
-    Class "Ring" "Belts" "Amulets"
+    BaseType "Talisman" "Stygian Vise"
+    SetBorderColor 141 240 75
+	MinimapIcon 2 Green Star 
+	PlayEffect Green
+Show
+    Class "Abyss Jewel"
+	ItemLevel >= 80
+	SetBorderColor 141 240 75
+Show	
+	Class "Boots"
+	Rarity = Rare
+    ItemLevel > 59	
+Show #//Armor 
+	Identified False
+    BaseType "Gripped Gloves" "Spiked Gloves" "Fingerless Silk Gloves" "Sorcerer Gloves" "Bone Helmet" "Hubris Circlet" "Vaal Regalia" "Titanium Spirit Shield" 
+    Rarity = Rare
+    ItemLevel > 59
+Show #//Weapon
+	Identified False
+    BaseType "Wand" "Sceptre" "Jewelled Foil" "Fleshripper" 
+    Rarity = Rare
+    ItemLevel > 59		
+Show
+    Class "Ring" "Belts" "Amulets" "Jewel"
 	Rarity = Rare
     ItemLevel > 59
     SetBorderColor 255 200 0	
+#-------------------------------------------	
+## leveling trash
+Show 
+	AreaLevel <= 15
+	LinkedSockets = 3
+	SetFontSize 45
+Show 
+	AreaLevel <= 15
+	Class "Ring" "Belts" "Amulets"
+	SetFontSize 40
+Show 
+	AreaLevel <= 15
+	Rarity >= Magic
+	SetFontSize 39	
+Show 
+	AreaLevel <= 67
+	SetFontSize 39
+	Sockets >= 4
+Show 
+	AreaLevel <= 67
+	Class "Gloves" "Helmet" "Boots"
+	SetFontSize 45
+	SetBorderColor 255 255 255
+	LinkedSockets = 4	
+Show
+	AreaLevel <= 67
+	SetBorderColor 255 255 255
+    LinkedSockets = 5
+Show 
+	AreaLevel <= 67
+	SetFontSize 39
+	Class "Flask"
+Show 
+	ItemLevel < 75
+	Rarity = Rare 
+#-------------------------------------------	
 
+Show	
+	Class "Utility Flasks"	
 Hide
     Rarity < Rare
     SetFontSize 18
-
-Show
-    Rarity = Rare
-	Identified True	
-
 Hide
     Rarity = Rare
     SetFontSize 30	
@@ -1577,19 +1547,17 @@ Hide
 #   Tempered		Req. Lv. 65	Adds (17-24) to (36-41) Physical Damage	
 #   Flaring			Req. Lv. 77	Adds (20-27) to (41-49) Physical Damage
 #   
-#   Shocking			Req. Lv. 51	Adds (3-9) to (110-116) Lightning Damage	
 #   Discharging		Req. Lv. 63	Adds (4-11) to (133-140) Lightning Damage	
 #   Electrocuting	Req. Lv. 74	Adds (4-13) to (158-166) Lightning Damage
+#   Vapourising		Req. Lv. 82	Adds (9–24) to (278–315) Lightning Damage
 #   
-#   Glaciated		Req. Lv. 52	Adds (26-35) to (52-60) Cold Damage	
 #   Polar			Req. Lv. 63	Adds (31-42) to (63-73) Cold Damage
 #   Entombing		Req. Lv. 75	Adds (37-50) to (74-87) Cold Damage
+#   Crystalising	Req. Lv. 82	Adds (77–101) to (152–174) Cold Damage
 #   
-#   Incinerating	Req. Lv. 51	Adds (32-42) to (63-74) Fire Damage	
 #   Blasting		Req. Lv. 62	Adds (38-51) to (77-89) Fire Damage	
-#   Cremating		Req. Lv. 74	Adds (45-61) to (91-106) Fire Damage  
-#   
-#   Malicious		Req. Lv. 83	Adds (47-72) to (98-123) Chaos Damage
+#   Cremating		Req. Lv. 74	Adds (45-61) to (91-106) Fire Damage
+#   Carbonising	    Req. Lv. 82	Adds (82–112) to (167–194) Fire Damage  
 #      
 #Weapon Suffix Т3-1
 #   of Fame			Req. Lv. 45	(20-22)% increased Attack Speed	

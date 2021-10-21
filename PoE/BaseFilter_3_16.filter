@@ -129,13 +129,13 @@ Show
 #// PlayAlertSoundPositional 3 200
 #//	MinimapIcon 0 Orange Hexagon 
 #//	PlayEffect Orange
-Show
-	Class "Map"	
-	Scourged True
-	SetFontSize 40
-    PlayAlertSoundPositional 3 200
-	MinimapIcon 0 Orange Hexagon 
-	PlayEffect Orange
+#//Show
+#//	Class "Map"	
+#//	Scourged True
+#//	SetFontSize 40
+#//     PlayAlertSoundPositional 3 200
+#//	MinimapIcon 0 Orange Hexagon 
+#//	PlayEffect Orange
 Show
     Class "Map" 
 	MapTier > 10

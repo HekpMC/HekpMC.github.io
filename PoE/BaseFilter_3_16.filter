@@ -37,8 +37,9 @@
   
 ## Misc
 Show  
-    Class "Quest Items" "Atlas Region Upgrade Item" "Misc Map Items"
+    Class "Quest Items" "Atlas Region Upgrade Item" "Misc Map Items"	
 	SetFontSize 40
+	SetBorderColor 0 255 0
 	MinimapIcon 0 Green Circle 
 	PlayEffect Green
 	PlayAlertSoundPositional 7 120
@@ -109,20 +110,15 @@ Show
     PlayAlertSoundPositional 3 200
 	MinimapIcon 0 Brown Hexagon 
 	PlayEffect Brown
-Show	
-	Class "Contract" "Blueprint" 
-	SetFontSize 40
-	SetBorderColor 229 117 59
-	MinimapIcon 0 Orange Hexagon 
-	PlayEffect Orange
-	PlayAlertSoundPositional 3 200
+
 Show
     Class "Map"	
 	HasInfluence "Shaper" "Elder"
 	SetFontSize 40
+	SetBorderColor 135 0 220
     PlayAlertSoundPositional 3 200
-	MinimapIcon 0 Green Hexagon 
-	PlayEffect Green
+	MinimapIcon 0 Purple Hexagon 
+	PlayEffect Purple
 Show
 	BlightedMap True
 	SetFontSize 40
@@ -139,9 +135,16 @@ Show
 #//	Class "Map"	
 #//	Scourged True
 #//	SetFontSize 40
-#//     PlayAlertSoundPositional 3 200
+#// PlayAlertSoundPositional 7 100
 #//	MinimapIcon 0 Orange Hexagon 
 #//	PlayEffect Orange
+Show	
+	Class "Contract" "Blueprint" 
+	SetFontSize 40
+	SetBorderColor 229 117 59
+	MinimapIcon 0 Orange Hexagon 
+	PlayEffect Orange
+	PlayAlertSoundPositional 7 100
 Show
     Class "Map" 
 	MapTier > 10
@@ -1131,6 +1134,15 @@ Show  # HP Crit Quivers (Rare)
   #---------------------------------------
 #-------------------------------------------
 ## Craft Top Base	
+Show	
+	BaseType "Quicksilver Flask"
+	ItemLevel > 84	
+	SetFontSize 45
+	SetBorderColor 255 255 255
+	PlayAlertSoundPositional 3 200
+	MinimapIcon 1 White Star 
+	PlayEffect White
+	
 Show
     BaseType "Vaal Regalia" "Gripped Gloves" "Hubris Circlet" "Sorcerer Gloves" "Sorcerer Boots" "Titanium Spirit Shield" "Astral Plate" "Eternal Burgonet" "Lion Pelt" "Nightmare Bascinet"
     ItemLevel > 85
@@ -1217,6 +1229,8 @@ Show
 #-------------------------------------------	
 
 ## Footer for hide item
+Show	
+	BaseType "Divine Life Flask" "Eternal Life Flask" "Divine Mana Flask" "Eternal Mana Flask" "Hallowed Hybrid Flask"
 Show	
 	Class "Utility Flasks"	
 Hide

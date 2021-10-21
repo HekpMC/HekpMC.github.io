@@ -15,4 +15,4 @@
 
 ## `Poe Filter 3.16`
 
-[Фильтр](https://HekpMC.github.io/temp),[Синтаксис для Notepad++](https://HekpMC.github.io/poe_filter)
+[Фильтр](https://HekpMC.github.io/temp), [Синтаксис для Notepad++](https://HekpMC.github.io/poe_filter)

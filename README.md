@@ -17,4 +17,4 @@
 
 [Синтаксис для Notepad++](https://HekpMC.github.io/Syntax.xml)
 
-[Фильтр 3.16](https://HekpMC.github.io/temp) 
+[Фильтр 3.16](https://HekpMC.github.io/BaseFilter_3_16.filter) 

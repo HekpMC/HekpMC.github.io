@@ -1,5 +1,6 @@
+#// Help
 #// Show / Hide
-
+#//
 #// Class "Dagger" "Gem"
 #// BaseType "Scroll of Wisdom"
 #// Rarity Normal, Magic, Rare
@@ -9,38 +10,39 @@
 #// SocketGroup RGBWDA
 #// ItemLevel < 68
 #// DropLevel >= 67
-
+#//
 #// SetFontSize 18-45 (32 is normal)
 #// SetBorderColor 255 200 0  0(RGBA)
 #// SetBackgroundColor 255 200 0 0
 #// SetTextColor 255 200 0 0
-
+#//
 #// PlayAlertSoundPositional 7 59
 #// CustomAlertSound "pop.mp3" 
 #// CustomAlertSound "C:/Users/YourName/Documents/My Games/Path of Exile/thesearethegem.wav" 
 #// DisableDropSound
-
+#//
 #// MinimapIcon SIZE COLOR SHAPE
 #// Size is 0 (largest), 1 (medium), 2 (small)
 #// Colors are Red, Green ,Blue ,Brown ,White ,Yellow ,Cyan ,Grey ,Orange ,Pink ,Purple
 #// Shapes are Circle, Diamond, Hexagon, Square, Star, Triangle, Cross, Moon, Raindrop, Kite, Pentagon, UpsideDownHouse 
-
+#//
 #// HasInfluence "Shaper" "Elder"
 #// GemQualityType Superior Divergent Anomalous Phantasmal
-
+#//
 #//New Item Filter Functionality
 #//Added Item Filter support for Scourged Items
 #//Added Item Filter support for Blight Ravaged Maps
 #//Added capacity to filter for Base Defences on Base Item Types
 
 
+  
+## Misc
 Show  
     Class "Quest Items" "Atlas Region Upgrade Item" "Misc Map Items"
 	SetFontSize 40
 	MinimapIcon 0 Green Circle 
 	PlayEffect Green
 	PlayAlertSoundPositional 7 120
-
 Show
     Class "Piece" "Pantheon Soul" "Labyrinth Map Item" "Incursion Item" 
     SetTextColor 255 255 255
@@ -48,7 +50,6 @@ Show
 	PlayAlertSoundPositional 7 120
 	MinimapIcon 0 White Circle 
 	PlayEffect White
-
 Show
 	BaseType "Divine Vessel" "Silver Key" "Golden Key" "Treasure Key" "Ritual Vessel" "Ritual Splinter" "Crescent Splinter" "Blood-filled Vessel"
 	SetTextColor 255 255 255
@@ -56,15 +57,14 @@ Show
 	PlayAlertSoundPositional 7 120
 	MinimapIcon 0 White Circle 
 	PlayEffect White	
-
 Show	
 	Class "Contract" "Blueprint" "Heist" "Trinket"
 	SetFontSize 40
 	SetBorderColor 229 117 59
 	MinimapIcon 2 Orange Circle 
 	PlayEffect Orange
-	PlayAlertSoundPositional 10 100		
-
+	PlayAlertSoundPositional 10 100	
+#-----------------------------------------------------------------------	
 ## Divination
 Hide #//Div Trash
     Class "Divination"
@@ -123,12 +123,12 @@ Show
     PlayAlertSoundPositional 3 200
 	MinimapIcon 0 Orange Hexagon 
 	PlayEffect Orange
-Show
-	UberBlightedMap True
-	SetFontSize 40
-    PlayAlertSoundPositional 3 200
-	MinimapIcon 0 Orange Hexagon 
-	PlayEffect Orange
+#//Show
+#//	UberBlightedMap True
+#//	SetFontSize 40
+#// PlayAlertSoundPositional 3 200
+#//	MinimapIcon 0 Orange Hexagon 
+#//	PlayEffect Orange
 Show
 	Class "Map"	
 	Scourged True
@@ -160,7 +160,7 @@ Show
 #-----------------------------------------------------------------------
 ## Currency
 Show #//Curr T1
-    BaseType "Awakener's Orb" "Exalted Orb" "Maven's Orb" "Mirror of Kalandra" "Reliquary" "Albino Rhoa Feather" "Mirror Shard" "Mythic Orb" "Sacred Orb"
+    BaseType "Awakener's Orb" "Exalted Orb" "Maven's Orb" "Mirror of Kalandra" "Reliquary" "Albino Rhoa Feather" "Mirror Shard" #//"Mythic Orb" "Sacred Orb" "Divine Teardrop"
     SetTextColor 170 158 129
     SetBorderColor 170 158 129
     SetFontSize 45
@@ -176,7 +176,7 @@ Show #//Curr T2
 	MinimapIcon 1 Yellow Diamond 
 	PlayEffect Yellow
 Show #//Curr T3
-    BaseType "Chaos Orb" "Bestiary Orb" "Vaal Orb" "Orb of Regret" "Gemcutter's Prism" "Regal Orb" "Annulment Shard" "Ancient Shard" "Rogue's Marker" "Tainted"
+    BaseType "Chaos Orb" "Bestiary Orb" "Vaal Orb" "Orb of Regret" "Gemcutter's Prism" "Regal Orb" "Annulment Shard" "Ancient Shard" "Rogue's Marker" #//"Tainted"
     SetTextColor 170 158 129
     SetBorderColor 170 158 129
 	SetFontSize 43	
@@ -262,15 +262,12 @@ Show
 	
 Show
 	BaseType "Scroll of Wisdom" "Portal Scroll"
-	SetFontSize 18
-
+	SetFontSize 25
 Hide
 	BaseType "Shard"
 	SetFontSize 25
-
 Show
     Class "Currency"
-
 #------------------------------------------------------------------------
 ## Clusters
 Show
@@ -577,7 +574,7 @@ Show #Warband Mod Items
 
 ## Noteworthy gears
   ##phys weapons
-Show #phys weapons (Magic)
+Show #// phys weapons (Magic)
 	Corrupted False
 	Rarity = Magic
 	HasExplicitMod "Cruel" "Tyrannical" "Merciless" "Conqueror's" "Emperor's" "Dictator's" "Razor-sharp" "Tempered" "Flaring"
@@ -586,7 +583,7 @@ Show #phys weapons (Magic)
 	SetBorderColor 255 200 0
 	MinimapIcon 2 Blue Star 
 	PlayEffect Blue
-Show #phys weapons (Rare)
+Show #// phys weapons (Rare)
 	HasExplicitMod "Cruel" "Tyrannical" "Merciless"
 	HasExplicitMod "Conqueror's" "Emperor's" "Dictator's" "Razor-sharp" "Tempered" "Flaring"
 	HasExplicitMod "of Fame" "of Infamy" "of Celebration" "of Puncturing" "of Penetrating" "of Incision" "of Fury" "of Ferocity" "of Destruction"
@@ -604,7 +601,7 @@ Show #phys weapons (Rare)
 	PlayEffect Yellow
   #---------------------------------------
   ##elem weapons
-Show #elem weapons (Magic)
+Show #// elem weapons (Magic)
 	Corrupted False
 	Rarity = Magic
 	HasExplicitMod "Vapourising" "Discharging" "Electrocuting" "Crystalising" "Polar" "Entombing" "Blasting" "Cremating" "Carbonising"
@@ -613,7 +610,7 @@ Show #elem weapons (Magic)
 	SetBorderColor 255 200 0
 	MinimapIcon 2 Blue Star 
 	PlayEffect Blue
-Show #elem weapons (Rare)
+Show #// elem weapons (Rare)
 	HasExplicitMod "Vapourising" "Discharging" "Electrocuting"
 	HasExplicitMod "Crystalising" "Polar" "Entombing" "Blasting" "Cremating" "Carbonising"
 	HasExplicitMod "of Fame" "of Infamy" "of Celebration" "of Puncturing" "of Penetrating" "of Incision" "of Fury" "of Ferocity" "of Destruction"
@@ -621,7 +618,7 @@ Show #elem weapons (Rare)
 	SetBorderColor 255 200 0  
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow
-Show #elem weapons (Rare)
+Show #// elem weapons (Rare)
 	HasExplicitMod "Crystalising" "Polar" "Entombing"
 	HasExplicitMod "Blasting" "Cremating" "Carbonising"
 	HasExplicitMod "of Fame" "of Infamy" "of Celebration" "of Puncturing" "of Penetrating" "of Incision" "of Fury" "of Ferocity" "of Destruction"
@@ -631,14 +628,14 @@ Show #elem weapons (Rare)
 	PlayEffect Yellow
   #---------------------------------------
   ## +all level weapons
-Show #Staves (Rare)
+Show #// Staves (Rare)
     Class "Staves"
 	HasExplicitMod "Magister's" "Lava Conjurer's" "Winter Beckoner's" "Tempest Master's" "Splintermind's" "Tecton's" 
 	SetFontSize 40
 	SetBorderColor 255 200 0  
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow
-Show # one hand (Rare)
+Show #// one hand (Rare)
     Class ! "Staves"
 	HasExplicitMod "Magister's" "Flame Shaper's" "Frost Singer's" "Thunderhand's" "Mad Lord's" "Lithomancer's" 
 	SetFontSize 40
@@ -647,7 +644,7 @@ Show # one hand (Rare)
 	PlayEffect Yellow
   #---------------------------------------  
   ## Summoner +3 helmets (Magic) 
-Show  # Summoner +3 helmets (Magic) 
+Show  #// Summoner +3 helmets (Magic) 
  	Corrupted False 
  	HasExplicitMod "Necromancer's" 
 	Rarity = Magic
@@ -655,8 +652,7 @@ Show  # Summoner +3 helmets (Magic)
 	SetBorderColor 255 200 0
 	MinimapIcon 2 Blue Star 
 	PlayEffect Blue	
-Show  # Summoner +3 helmets (Rare) 
- 	Corrupted False 
+Show  #// Summoner +3 helmets (Rare) 
  	HasExplicitMod "Necromancer's" 
 	Rarity = Rare
  	SetFontSize 40
@@ -665,8 +661,7 @@ Show  # Summoner +3 helmets (Rare)
 	PlayEffect Yellow
   #--------------------------------------- 	
   ## HP Res/str helmets
-Show  # HP Res/str(Magic) 
- 	Corrupted False  	
+Show  #// HP Res/str(Magic)  	
 	Class "Helmet"
 	HasExplicitMod "Virile" "Athlete's" "Fecund"
 	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth" "of the Maelstrom" "of the Lightning" "of Ephij" "of the Leviathan" "of the Titan" "of the Gods" "of the Godslayer"
@@ -675,8 +670,7 @@ Show  # HP Res/str(Magic)
 	SetBorderColor 255 200 0
 	MinimapIcon 2 Blue Star 
 	PlayEffect Blue	
-Show # HP str Res (Rare) 
- 	Corrupted False  	
+Show #// HP str Res (Rare)  	
 	Class "Helmet"
 	HasExplicitMod "Virile" "Athlete's" "Fecund"
 	HasExplicitMod "of the Leviathan" "of the Titan" "of the Gods" "of the Godslayer"
@@ -685,8 +679,7 @@ Show # HP str Res (Rare)
 	SetBorderColor 255 200 0
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow	
-Show  # HP 2Res (Rare) 
- 	Corrupted False  	
+Show  #// HP 2Res (Rare) 	
 	Class "Helmet"
 	HasExplicitMod "Virile" "Athlete's" "Fecund"
 	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast"
@@ -695,8 +688,7 @@ Show  # HP 2Res (Rare)
 	SetBorderColor 255 200 0
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow	
-Show # HP 2Res (Rare) 
- 	Corrupted False  	
+Show #// HP 2Res (Rare)	
 	Class "Helmet"
 	HasExplicitMod "Virile" "Athlete's" "Fecund"
 	HasExplicitMod "of the Volcano" "of the Magma" "of Tzteosh" 
@@ -705,8 +697,7 @@ Show # HP 2Res (Rare)
 	SetBorderColor 255 200 0
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow	
-Show # HP 2Res (Rare)
- 	Corrupted False  	
+Show #// HP 2Res (Rare) 	
 	Class "Helmet"
 	HasExplicitMod "Virile" "Athlete's" "Fecund"
 	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij"
@@ -717,8 +708,17 @@ Show # HP 2Res (Rare)
 	PlayEffect Yellow
   #---------------------------------------
   ## ES Res/int helmets
-Show # ES Res/int helmets
+Show #// ES Res/int helmets
 	Corrupted False 
+	Class "Helmet"
+	HasExplicitMod "Inculcated" "Interpolated" "Inspired" "Evanescent" "Unreal" "Illusory" "Dauntless" "Indomitable" "Unassailable" "Summoner's" "Necromancer's" 
+	HasExplicitMod "Naga's" "Djinn's" "Seraphim's" "Wasp's" "Dragonfly's" "Hummingbird's" "Pulsing" "Seething" "Blazing" "of the Maelstrom" "of the Lightning" "of Ephij" "of the Savant" "of the Virtuoso" "of the Genius" "of the Polymath" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth"
+ 	Rarity = Magic
+	SetFontSize 40
+	SetBorderColor 255 200 0
+	MinimapIcon 2 Blue Star 
+	PlayEffect Blue	
+Show #// ES Res/int helmets
 	Class "Helmet"
 	HasExplicitMod "Inculcated" "Interpolated" "Inspired" "Evanescent" "Unreal" "Illusory" "Dauntless" "Indomitable" "Unassailable"
  	HasExplicitMod "Summoner's" "Necromancer's" "Naga's" "Djinn's" "Seraphim's" "Wasp's" "Dragonfly's" "Hummingbird's" "Pulsing" "Seething" "Blazing"
@@ -728,697 +728,391 @@ Show # ES Res/int helmets
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow
   #---------------------------------------
-
-Show  # ManaRF boots
- 	Corrupted False 
+  ## HP/move Res/str boots/gloves
+Show #// HP/Move str+res boots/gloves
+	Class "Boots" "Gloves"
+	HasExplicitMod "Rotund" "Virile" "Athlete's" "Gazelle's" "Cheetah's" "Hellion's"
+	HasExplicitMod "of the Leviathan" "of the Titan" "of the Gods"
+	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth"
+ 	SetFontSize 40
+	SetBorderColor 255 200 0
+	MinimapIcon 2 Yellow Star 
+	PlayEffect Yellow
+Show #// HP/Move Chaos+res boots
 	Class "Boots"
-	HasExplicitMod "Mazarine" "Blue" "Zaffre"
- 	HasExplicitMod "of the Leviathan" "of the Titan" "of the Gods"
+	HasExplicitMod "Rotund" "Virile" "Athlete's" "Gazelle's" "Cheetah's" "Hellion's"
+	HasExplicitMod "of Expulsion" "of Exile" "of Bameth"
+	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" 
+ 	SetFontSize 40
+	SetBorderColor 255 200 0
+	MinimapIcon 2 Yellow Star 
+	PlayEffect Yellow
+Show #// HP+Move Res/str boots
+	Class "Boots"
+	HasExplicitMod "Rotund" "Virile" "Athlete's"
+ 	HasExplicitMod "Gazelle's" "Cheetah's" "Hellion's"
+	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Leviathan" "of the Titan" "of the Gods" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth"
+ 	SetFontSize 40
+	SetBorderColor 255 200 0
+	MinimapIcon 2 Yellow Star 
+	PlayEffect Yellow
+  #---------------------------------------
+  ## ES/Move Res/int boots 
+Show #// ES/Move int+Res boots/gloves
+	Class "Boots" "Gloves"
+	HasExplicitMod "Inculcated" "Interpolated" "Inspired" "Evanescent" "Unreal" "Illusory" "Dauntless" "Indomitable" "Unassailable" "Radiating" "Pulsing" "Seething" "Gazelle's" "Cheetah's" "Hellion's" "Naga's" "Djinn's" "Seraphim's" "Wasp's" "Dragonfly's" "Hummingbird's"
 	HasExplicitMod "of the Savant" "of the Virtuoso" "of the Genius"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow
-
-Show # HP Move Res/str boots
-	Corrupted False 
-	Class "Boots"
-	HasExplicitMod "Rotund" "Virile" "Athlete's"
- 	HasExplicitMod "Gazelle's" "Cheetah's" "Hellion's"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Leviathan" "of the Titan" "of the Gods"
-	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow
-
-Show # HP Move Res/str boots
-	Corrupted False 
-	Class "Boots"
-	HasExplicitMod "Rotund" "Virile" "Athlete's"
- 	HasExplicitMod "Gazelle's" "Cheetah's" "Hellion's"
-	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Leviathan" "of the Titan" "of the Gods"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow
-
-Show # HP Move Res/str boots
-	Corrupted False 
-	Class "Boots"
-	HasExplicitMod "Rotund" "Virile" "Athlete's"
- 	HasExplicitMod "Gazelle's" "Cheetah's" "Hellion's"
-	HasExplicitMod "of the Volcano" "of the Magma" "of Tzteosh" "of the Leviathan" "of the Titan" "of the Gods"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of Expulsion" "of Exile" "of Bameth"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow
-
-Show # HP Move Res/str boots
-	Corrupted False 
-	Class "Boots"
-	HasExplicitMod "Rotund" "Virile" "Athlete's"
- 	HasExplicitMod "Gazelle's" "Cheetah's" "Hellion's"
-	HasExplicitMod "of Expulsion" "of Exile" "of Bameth" "of the Leviathan" "of the Titan" "of the Gods"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow
-
-Show # ES/Move Res/int boots 
-	Corrupted False 
-	Class "Boots"
-	HasExplicitMod "Inculcated" "Interpolated" "Inspired" "Evanescent" "Unreal" "Illusory" "Dauntless" "Indomitable" "Unassailable" "Radiating" "Pulsing" "Seething"
- 	HasExplicitMod "Gazelle's" "Cheetah's" "Hellion's" "Naga's" "Djinn's" "Seraphim's" "Wasp's" "Dragonfly's" "Hummingbird's"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Savant" "of the Virtuoso" "of the Genius"
-	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow
-
-Show # ES/Move Res/int boots
-	Corrupted False 
-	Class "Boots"
-	HasExplicitMod "Inculcated" "Interpolated" "Inspired" "Evanescent" "Unreal" "Illusory" "Dauntless" "Indomitable" "Unassailable" "Radiating" "Pulsing" "Seething"
- 	HasExplicitMod "Gazelle's" "Cheetah's" "Hellion's" "Naga's" "Djinn's" "Seraphim's" "Wasp's" "Dragonfly's" "Hummingbird's"
-	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Savant" "of the Virtuoso" "of the Genius"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow
-
-Show # ES/Move Res/int boots
-	Corrupted False 
-	Class "Boots"
-	HasExplicitMod "Inculcated" "Interpolated" "Inspired" "Evanescent" "Unreal" "Illusory" "Dauntless" "Indomitable" "Unassailable" "Radiating" "Pulsing" "Seething"
- 	HasExplicitMod "Gazelle's" "Cheetah's" "Hellion's" "Naga's" "Djinn's" "Seraphim's" "Wasp's" "Dragonfly's" "Hummingbird's"
-	HasExplicitMod "of the Volcano" "of the Magma" "of Tzteosh" "of the Savant" "of the Virtuoso" "of the Genius"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of Expulsion" "of Exile" "of Bameth"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow
-
-Show # ES/Move Res/int boots
-	Corrupted False 
-	Class "Boots"
-	HasExplicitMod "Inculcated" "Interpolated" "Inspired" "Evanescent" "Unreal" "Illusory" "Dauntless" "Indomitable" "Unassailable" "Radiating" "Pulsing" "Seething"
- 	HasExplicitMod "Gazelle's" "Cheetah's" "Hellion's" "Naga's" "Djinn's" "Seraphim's" "Wasp's" "Dragonfly's" "Hummingbird's"
-	HasExplicitMod "of Expulsion" "of Exile" "of Bameth" "of the Savant" "of the Virtuoso" "of the Genius"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow
-
-Show # ES Res/int Gloves
-	Corrupted False 
-	Class "Gloves"
-	HasExplicitMod "Inculcated" "Interpolated" "Inspired" "Evanescent" "Unreal" "Illusory" "Dauntless" "Indomitable" "Unassailable"
- 	HasExplicitMod "Naga's" "Djinn's" "Seraphim's" "Wasp's" "Dragonfly's" "Hummingbird's" "Radiating" "Pulsing" "Seething"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Savant" "of the Virtuoso" "of the Genius"
-	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow
-
-Show # ES Res/int Gloves
-	Corrupted False 
-	Class "Gloves"
-	HasExplicitMod "Inculcated" "Interpolated" "Inspired" "Evanescent" "Unreal" "Illusory" "Dauntless" "Indomitable" "Unassailable"
- 	HasExplicitMod "Naga's" "Djinn's" "Seraphim's" "Wasp's" "Dragonfly's" "Hummingbird's" "Radiating" "Pulsing" "Seething"
-	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Savant" "of the Virtuoso" "of the Genius"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow
-
-Show # ES Res/int Gloves
-	Corrupted False 
-	Class "Gloves"
-	HasExplicitMod "Inculcated" "Interpolated" "Inspired" "Evanescent" "Unreal" "Illusory" "Dauntless" "Indomitable" "Unassailable"
- 	HasExplicitMod "Naga's" "Djinn's" "Seraphim's" "Wasp's" "Dragonfly's" "Hummingbird's" "Radiating" "Pulsing" "Seething"
-	HasExplicitMod "of the Volcano" "of the Magma" "of Tzteosh" "of the Savant" "of the Virtuoso" "of the Genius"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of Expulsion" "of Exile" "of Bameth"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow
-
-Show # ES Res/int Gloves
-	Corrupted False 
-	Class "Gloves"
-	HasExplicitMod "Inculcated" "Interpolated" "Inspired" "Evanescent" "Unreal" "Illusory" "Dauntless" "Indomitable" "Unassailable"
- 	HasExplicitMod "Naga's" "Djinn's" "Seraphim's" "Wasp's" "Dragonfly's" "Hummingbird's" "Radiating" "Pulsing" "Seething"
-	HasExplicitMod "of Expulsion" "of Exile" "of Bameth" "of the Savant" "of the Virtuoso" "of the Genius"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow
-
-
-Show  # HP Res/str Body (Rare) 
- 	Corrupted False  
-	Class "Body Armour"	
-	HasExplicitMod "Fecund" "Vigorous""Rapturous" "Prime"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Leviathan" "of the Titan" "of the Gods" "of the Godslayer"
-	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow
-
-Show  # HP Res/str Body (Rare) 
- 	Corrupted False  
-	Class "Body Armour"	
-	HasExplicitMod "Fecund" "Vigorous""Rapturous" "Prime"
-	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Leviathan" "of the Titan" "of the Gods" "of the Godslayer"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow	
-
-Show  # HP Res/str Body (Rare) 
- 	Corrupted False  
-	Class "Body Armour"	
-	HasExplicitMod "Fecund" "Vigorous""Rapturous" "Prime"
-	HasExplicitMod "of the Volcano" "of the Magma" "of Tzteosh" "of the Leviathan" "of the Titan" "of the Gods" "of the Godslayer"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of Expulsion" "of Exile" "of Bameth"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow	
-
-Show  # HP Res/str Body (Rare) 
- 	Corrupted False  
-	Class "Body Armour"	
-	HasExplicitMod "Virile" "Athlete's" "Fecund" "Rapturous" "Prime"
-	HasExplicitMod "of Expulsion" "of Exile" "of Bameth" "of the Leviathan" "of the Titan" "of the Gods" "of the Godslayer"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow	
-
-Show # ES Res/int Body
-	Corrupted False 
-	Class "Body Armour"	
-	HasExplicitMod "Beatified" "Consecrated" "Spirit's" "Eidolon's" "Scintillating" "Incandescent" "Resplendent"
-	HasExplicitMod "Inculcated" "Interpolated" "Inspired" "Interpermeated" "Evanescent" "Unreal" "Illusory" "Incorporeal" "Dauntless" "Indomitable" "Unassailable" "Unfaltering" "Naga's" "Djinn's" "Seraphim's" "Wasp's" "Dragonfly's" "Hummingbird's" 
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Savant" "of the Virtuoso" "of the Genius" "of the Polymath"
-	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow
-
-Show # ES Res/int Body
-	Corrupted False 
-	Class "Body Armour"	
-	HasExplicitMod "Beatified" "Consecrated" "Spirit's" "Eidolon's" "Scintillating" "Incandescent" "Resplendent"
-	HasExplicitMod "Inculcated" "Interpolated" "Inspired" "Interpermeated" "Evanescent" "Unreal" "Illusory" "Incorporeal" "Dauntless" "Indomitable" "Unassailable" "Unfaltering" "Naga's" "Djinn's" "Seraphim's" "Wasp's" "Dragonfly's" "Hummingbird's" 
-	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Savant" "of the Virtuoso" "of the Genius" "of the Polymath"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow
-
-Show # ES Res/int Body
-	Corrupted False 
-	Class "Body Armour"	
-	HasExplicitMod "Beatified" "Consecrated" "Spirit's" "Eidolon's" "Scintillating" "Incandescent" "Resplendent"
-	HasExplicitMod "Inculcated" "Interpolated" "Inspired" "Interpermeated" "Evanescent" "Unreal" "Illusory" "Incorporeal" "Dauntless" "Indomitable" "Unassailable" "Unfaltering" "Naga's" "Djinn's" "Seraphim's" "Wasp's" "Dragonfly's" "Hummingbird's" 
-	HasExplicitMod "of the Volcano" "of the Magma" "of Tzteosh" "of the Savant" "of the Virtuoso" "of the Genius" "of the Polymath"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of Expulsion" "of Exile" "of Bameth"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow
-
-Show # ES Res/int Body
-	Corrupted False 
-	Class "Body Armour"	
-	HasExplicitMod "Beatified" "Consecrated" "Spirit's" "Eidolon's" "Scintillating" "Incandescent" "Resplendent"
-	HasExplicitMod "Inculcated" "Interpolated" "Inspired" "Interpermeated" "Evanescent" "Unreal" "Illusory" "Incorporeal" "Dauntless" "Indomitable" "Unassailable" "Unfaltering" "Naga's" "Djinn's" "Seraphim's" "Wasp's" "Dragonfly's" "Hummingbird's" 
-	HasExplicitMod "of Expulsion" "of Exile" "of Bameth" "of the Savant" "of the Virtuoso" "of the Genius" "of the Polymath"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow
-
-	
-Show  # HP Res/str Shield (Rare) 
- 	Corrupted False  
-	Class "Shields"	
-	HasExplicitMod "Virile" "Athlete's" "Fecund" "Vigorous"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Leviathan" "of the Titan" "of the Gods" "of the Godslayer"
-	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth" "of Variegation" "of the Rainbow" "of the Span"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow
-
-Show  # HP Res/str Shield (Rare) 
- 	Corrupted False  
-	Class "Shields"	
-	HasExplicitMod "Virile" "Athlete's" "Fecund" "Vigorous"
-	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Leviathan" "of the Titan" "of the Gods" "of the Godslayer"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth" "of Variegation" "of the Rainbow" "of the Span"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow	
-
-Show  # HP Res/str Shield (Rare) 
- 	Corrupted False  
-	Class "Shields"	
-	HasExplicitMod "Virile" "Athlete's" "Fecund" "Vigorous"
-	HasExplicitMod "of the Volcano" "of the Magma" "of Tzteosh" "of the Leviathan" "of the Titan" "of the Gods" "of the Godslayer"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of Expulsion" "of Exile" "of Bameth" "of Variegation" "of the Rainbow" "of the Span"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow	
-
-Show  # HP Res/str Shield (Rare) 
- 	Corrupted False  
-	Class "Shields"	
-	HasExplicitMod "Virile" "Athlete's" "Fecund" "Vigorous"
-	HasExplicitMod "of Expulsion" "of Exile" "of Bameth" "of the Leviathan" "of the Titan" "of the Gods" "of the Godslayer"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Variegation" "of the Rainbow" "of the Span"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow	
-
-Show  # HP Res/str Shield (Rare) 
- 	Corrupted False  
-	Class "Shields"	
-	HasExplicitMod "Virile" "Athlete's" "Fecund" "Vigorous"
-	HasExplicitMod "of Variegation" "of the Rainbow" "of the Span" "of the Leviathan" "of the Titan" "of the Gods" "of the Godslayer"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow	
-
-Show # ES Res/int Shield
-	Corrupted False 
-	Class "Shields"	
-	HasExplicitMod "Hallowed" "Beatified" "Cherub's" "Spirit's" "Eidolon's" "Blazing" "Scintillating" "Incandescent"
-	HasExplicitMod "Inculcated" "Interpolated" "Inspired" "Interpermeated" "Evanescent" "Unreal" "Illusory" "Incorporeal" "Dauntless" "Indomitable" "Unassailable" "Unfaltering" "Naga's" "Djinn's" "Seraphim's" "Wasp's" "Dragonfly's" "Hummingbird's" 
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Savant" "of the Virtuoso" "of the Genius" "of the Polymath"
-	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth" "of Variegation" "of the Rainbow" "of the Span"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow
-
-Show # ES Res/int Shield
-	Corrupted False 
-	Class "Shields"	
-	HasExplicitMod "Hallowed" "Beatified" "Cherub's" "Spirit's" "Eidolon's" "Blazing" "Scintillating" "Incandescent"
-	HasExplicitMod "Inculcated" "Interpolated" "Inspired" "Interpermeated" "Evanescent" "Unreal" "Illusory" "Incorporeal" "Dauntless" "Indomitable" "Unassailable" "Unfaltering" "Naga's" "Djinn's" "Seraphim's" "Wasp's" "Dragonfly's" "Hummingbird's" 
-	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Savant" "of the Virtuoso" "of the Genius" "of the Polymath"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth" "of Variegation" "of the Rainbow" "of the Span"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow
-
-Show # ES Res/int Shield
-	Corrupted False 
-	Class "Shields"	
-	HasExplicitMod "Hallowed" "Beatified" "Cherub's" "Spirit's" "Eidolon's" "Blazing" "Scintillating" "Incandescent"
-	HasExplicitMod "Inculcated" "Interpolated" "Inspired" "Interpermeated" "Evanescent" "Unreal" "Illusory" "Incorporeal" "Dauntless" "Indomitable" "Unassailable" "Unfaltering" "Naga's" "Djinn's" "Seraphim's" "Wasp's" "Dragonfly's" "Hummingbird's" 
-	HasExplicitMod "of the Volcano" "of the Magma" "of Tzteosh" "of the Savant" "of the Virtuoso" "of the Genius" "of the Polymath"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of Expulsion" "of Exile" "of Bameth" "of Variegation" "of the Rainbow" "of the Span"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow
-
-Show # ES Res/int Shield
-	Corrupted False 
-	Class "Shields"	
-	HasExplicitMod "Hallowed" "Beatified" "Cherub's" "Spirit's" "Eidolon's" "Blazing" "Scintillating" "Incandescent"
-	HasExplicitMod "Inculcated" "Interpolated" "Inspired" "Interpermeated" "Evanescent" "Unreal" "Illusory" "Incorporeal" "Dauntless" "Indomitable" "Unassailable" "Unfaltering" "Naga's" "Djinn's" "Seraphim's" "Wasp's" "Dragonfly's" "Hummingbird's" 
-	HasExplicitMod "of Expulsion" "of Exile" "of Bameth" "of the Savant" "of the Virtuoso" "of the Genius" "of the Polymath"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Variegation" "of the Rainbow" "of the Span"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow
-
-Show # ES Res/int Shield
-	Corrupted False 
-	Class "Shields"	
-	HasExplicitMod "Hallowed" "Beatified" "Cherub's" "Spirit's" "Eidolon's" "Blazing" "Scintillating" "Incandescent"
-	HasExplicitMod "Inculcated" "Interpolated" "Inspired" "Interpermeated" "Evanescent" "Unreal" "Illusory" "Incorporeal" "Dauntless" "Indomitable" "Unassailable" "Unfaltering" "Naga's" "Djinn's" "Seraphim's" "Wasp's" "Dragonfly's" "Hummingbird's" 
-	HasExplicitMod "of Variegation" "of the Rainbow" "of the Span" "of the Savant" "of the Virtuoso" "of the Genius" "of the Polymath"
 	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth"
  	SetFontSize 40
 	SetBorderColor 255 200 0
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow
-
-
-Show  # HP/ES Res/str Belts (Rare)   
-	Class "Belts"	
-	HasExplicitMod "Virile" "Athlete's" "Fecund" "Incandescent" "Resplendent" "Dazzling"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Leviathan" "of the Titan" "of the Gods" "of the Godslayer"
-	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth"
+Show #// ES+Move Res/int boots
+	Corrupted False 
+	Class "Boots" "Gloves"
+	HasExplicitMod "Inculcated" "Interpolated" "Inspired" "Evanescent" "Unreal" "Illusory" "Dauntless" "Indomitable" "Unassailable" "Radiating" "Pulsing" "Seething"
+ 	HasExplicitMod "Gazelle's" "Cheetah's" "Hellion's" "Naga's" "Djinn's" "Seraphim's" "Wasp's" "Dragonfly's" "Hummingbird's"
+	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Savant" "of the Virtuoso" "of the Genius" "of the Maelstrom" "of the Lightning" "of Ephij" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth"
  	SetFontSize 40
 	SetBorderColor 255 200 0
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow
-
-Show  # HP/ES Res/str Belts (Rare)   
+  #---------------------------------------  
+  ## HP Res/str Shields
+Show  # Armor str+Res Shield (Rare) 
+	Class "Shields"
+	HasExplicitMod "Carapaced"
+	HasExplicitMod "Virile" "Athlete's" "Fecund" "Vigorous" "Thickened" "Girded" "Impregnable" "Impenetrable"
+	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth" "of Variegation" "of the Rainbow" "of the Span"
+ 	SetFontSize 40
+	SetBorderColor 255 200 0
+	MinimapIcon 2 Yellow Star 
+	PlayEffect Yellow
+Show  # HP str+Res Shield (Rare) 
+	Class "Shields"	
+	HasExplicitMod "Virile" "Athlete's" "Fecund" "Vigorous"
+	HasExplicitMod "of the Leviathan" "of the Titan" "of the Gods" "of the Godslayer"
+	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth" "of Variegation" "of the Rainbow" "of the Span"
+ 	SetFontSize 40
+	SetBorderColor 255 200 0
+	MinimapIcon 2 Yellow Star 
+	PlayEffect Yellow
+Show  # HP Chaos+Res Shield (Rare)  
+	Class "Shields"	
+	HasExplicitMod "Virile" "Athlete's" "Fecund" "Vigorous"
+	HasExplicitMod "of Expulsion" "of Exile" "of Bameth"
+	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Variegation" "of the Rainbow" "of the Span"
+ 	SetFontSize 40
+	SetBorderColor 255 200 0
+	MinimapIcon 2 Yellow Star 
+	PlayEffect Yellow
+Show  # HP All+Res Shield (Rare) 
+	Class "Shields"	
+	HasExplicitMod "Virile" "Athlete's" "Fecund" "Vigorous"
+	HasExplicitMod "of Variegation" "of the Rainbow" "of the Span"
+	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" 
+ 	SetFontSize 40
+	SetBorderColor 255 200 0
+	MinimapIcon 2 Yellow Star 
+	PlayEffect Yellow
+Show  # HP 2Res Shield (Rare) 
+	Class "Shields"	
+	HasExplicitMod "Virile" "Athlete's" "Fecund" "Vigorous"
+	HasExplicitMod "of the Volcano" "of the Magma" "of Tzteosh" 
+	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" 
+ 	SetFontSize 40
+	SetBorderColor 255 200 0
+	MinimapIcon 2 Yellow Star 
+	PlayEffect Yellow
+Show  # HP 2Res Shield (Rare)  
+	Class "Shields"	
+	HasExplicitMod "Virile" "Athlete's" "Fecund" "Vigorous"
+	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast"  
+	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" 
+ 	SetFontSize 40
+	SetBorderColor 255 200 0
+	MinimapIcon 2 Yellow Star 
+	PlayEffect Yellow
+  #---------------------------------------	
+  ## ES Res/int Shields
+Show # 2ES Res/int Shield
+	Class "Shields"	
+	HasExplicitMod "Hallowed" "Beatified" "Cherub's" "Spirit's" "Eidolon's" "Blazing" "Scintillating" "Incandescent"
+	HasExplicitMod "Inculcated" "Interpolated" "Inspired" "Interpermeated" "Evanescent" "Unreal" "Illusory" "Incorporeal" "Dauntless" "Indomitable" "Unassailable" "Unfaltering" "Naga's" "Djinn's" "Seraphim's" "Wasp's" "Dragonfly's" "Hummingbird's" 
+	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Savant" "of the Virtuoso" "of the Genius" "of the Polymath" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth" "of Variegation" "of the Rainbow" "of the Span"
+ 	SetFontSize 40
+	SetBorderColor 255 200 0
+	MinimapIcon 2 Yellow Star 
+	PlayEffect Yellow
+Show # ES int+res Shield
+	Class "Shields" 
+	HasExplicitMod "Hallowed" "Beatified" "Cherub's" "Spirit's" "Eidolon's" "Blazing" "Scintillating" "Incandescent""Inculcated" "Interpolated" "Inspired" "Interpermeated" "Evanescent" "Unreal" "Illusory" "Incorporeal" "Dauntless" "Indomitable" "Unassailable" "Unfaltering" "Naga's" "Djinn's" "Seraphim's" "Wasp's" "Dragonfly's" "Hummingbird's" 
+	HasExplicitMod "of the Savant" "of the Virtuoso" "of the Genius" "of the Polymath"
+	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Maelstrom" "of the Lightning" "of Ephij" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth" "of Variegation" "of the Rainbow" "of the Span"
+ 	SetFontSize 40
+	SetBorderColor 255 200 0
+	MinimapIcon 2 Yellow Star 
+	PlayEffect Yellow
+Show # ES all+res Shield
+	Class "Shields" 
+	HasExplicitMod "Hallowed" "Beatified" "Cherub's" "Spirit's" "Eidolon's" "Blazing" "Scintillating" "Incandescent""Inculcated" "Interpolated" "Inspired" "Interpermeated" "Evanescent" "Unreal" "Illusory" "Incorporeal" "Dauntless" "Indomitable" "Unassailable" "Unfaltering" "Naga's" "Djinn's" "Seraphim's" "Wasp's" "Dragonfly's" "Hummingbird's" 
+	HasExplicitMod "of Variegation" "of the Rainbow" "of the Span"
+	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Maelstrom" "of the Lightning" "of Ephij" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth" 
+ 	SetFontSize 40
+	SetBorderColor 255 200 0
+	MinimapIcon 2 Yellow Star 
+	PlayEffect Yellow
+Show # ES 2res Shield
+	Class "Shields" 
+	HasExplicitMod "Hallowed" "Beatified" "Cherub's" "Spirit's" "Eidolon's" "Blazing" "Scintillating" "Incandescent""Inculcated" "Interpolated" "Inspired" "Interpermeated" "Evanescent" "Unreal" "Illusory" "Incorporeal" "Dauntless" "Indomitable" "Unassailable" "Unfaltering" "Naga's" "Djinn's" "Seraphim's" "Wasp's" "Dragonfly's" "Hummingbird's" 
+	HasExplicitMod "of the Volcano" "of the Magma" "of Tzteosh"
+	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Maelstrom" "of the Lightning" "of Ephij"  "of Expulsion" "of Exile" "of Bameth" 
+ 	SetFontSize 40
+	SetBorderColor 255 200 0
+	MinimapIcon 2 Yellow Star 
+	PlayEffect Yellow
+Show # ES 2res Shield
+	Class "Shields" 
+	HasExplicitMod "Hallowed" "Beatified" "Cherub's" "Spirit's" "Eidolon's" "Blazing" "Scintillating" "Incandescent""Inculcated" "Interpolated" "Inspired" "Interpermeated" "Evanescent" "Unreal" "Illusory" "Incorporeal" "Dauntless" "Indomitable" "Unassailable" "Unfaltering" "Naga's" "Djinn's" "Seraphim's" "Wasp's" "Dragonfly's" "Hummingbird's" 
+	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij"
+	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast"   "of Expulsion" "of Exile" "of Bameth" 
+ 	SetFontSize 40
+	SetBorderColor 255 200 0
+	MinimapIcon 2 Yellow Star 
+	PlayEffect Yellow
+  #---------------------------------------
+  ## Belts
+Show  #// HP/ES str+Res Belts (Rare)   
 	Class "Belts"	
 	HasExplicitMod "Virile" "Athlete's" "Fecund" "Incandescent" "Resplendent" "Dazzling"
-	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Leviathan" "of the Titan" "of the Gods" "of the Godslayer"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth"
+	HasExplicitMod "of the Titan" "of the Gods" "of the Godslayer"
+	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth" "of the Maelstrom" "of the Lightning" "of Ephij" "of the Leviathan"
+ 	SetFontSize 40
+	SetBorderColor 255 200 0
+	MinimapIcon 2 Yellow Star 
+	PlayEffect Yellow
+Show  #// HP/ES Chaos+Res Belts (Rare)   
+	Class "Belts"	
+	HasExplicitMod "Virile" "Athlete's" "Fecund" "Incandescent" "Resplendent" "Dazzling"
+	HasExplicitMod "of Expulsion" "of Exile" "of Bameth"
+	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Maelstrom" "of the Lightning" "of Ephij" "of the Volcano" "of the Magma" "of Tzteosh" 
  	SetFontSize 40
 	SetBorderColor 255 200 0
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow	
-
-Show  # HP/ES Res/str Belts (Rare)   
+Show  #// HP/ES 2Res Belts (Rare)   
 	Class "Belts"	
 	HasExplicitMod "Virile" "Athlete's" "Fecund" "Incandescent" "Resplendent" "Dazzling"
-	HasExplicitMod "of the Volcano" "of the Magma" "of Tzteosh" "of the Leviathan" "of the Titan" "of the Gods" "of the Godslayer"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of Expulsion" "of Exile" "of Bameth"
+	HasExplicitMod "of the Volcano" "of the Magma" "of Tzteosh"
+	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast"
  	SetFontSize 40
 	SetBorderColor 255 200 0
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow	
-
-Show  # HP/ES Res/str Belts (Rare)   
+Show  #// HP/ES 2Res Belts (Rare)   
 	Class "Belts"	
 	HasExplicitMod "Virile" "Athlete's" "Fecund" "Incandescent" "Resplendent" "Dazzling"
-	HasExplicitMod "of Expulsion" "of Exile" "of Bameth" "of the Leviathan" "of the Titan" "of the Gods" "of the Godslayer"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh"
+	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij"
+	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast"
  	SetFontSize 40
 	SetBorderColor 255 200 0
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow	
-
 Show  # Stun Belts (Rare)   
 	Class "Belts"	
 	HasExplicitMod "Virile" "Athlete's" "Fecund"
 	HasExplicitMod "of the Combatant" "of the Gladiator"
 	HasExplicitMod "of Slamming" "of Staggering"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth" "of the Leviathan" "of the Titan" "of the Gods" "of the Godslayer"
- 	SetFontSize 40
+	SetFontSize 40
 	SetBorderColor 255 200 0
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow	
-
 Show  # Flask Belt (Rare)   
 	Class "Belts"	
 	HasExplicitMod "Virile" "Athlete's" "Fecund"
-	HasExplicitMod "of Sipping"
+	HasExplicitMod "of Refilling""of Overflowing""of Sipping"
 	HasExplicitMod "of Savouring"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth" "of the Leviathan" "of the Titan" "of the Gods" "of the Godslayer"
- 	SetFontSize 40
+	SetFontSize 40
 	SetBorderColor 255 200 0
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow
-
-
-Show  # ManaRF Ring 
+  #---------------------------------------
+  ## Rings
+Show  # HP/ES/MP/lvl STR+INT/ALL Ring 
 	Class "Ring"
-	HasExplicitMod "Mazarine" "Blue" "Zaffre" "Ultramarine"
+	HasExplicitMod "Robust" "Rotund" "Virile" "Scintillating" "Incandescent" "Resplendent" "Mazarine" "Blue" "Zaffre" "Ultramarine" "Quintessential" "Flawless"
  	HasExplicitMod "of the Leviathan" "of the Titan" "of the Gods"
+	HasExplicitMod "of the Savant" "of the Virtuoso" "of the Genius""of the Comet" 
+ 	SetFontSize 40
+	SetBorderColor 255 200 0
+	MinimapIcon 2 Yellow Star 
+	PlayEffect Yellow
+Show  # HP/ES/MP/lvl DEX+STR/INT/ALL Ring 
+	Class "Ring"
+	HasExplicitMod "Robust" "Rotund" "Virile" "Scintillating" "Incandescent" "Resplendent" "Mazarine" "Blue" "Zaffre" "Ultramarine" "Quintessential" "Flawless"
+ 	HasExplicitMod "of the Jaguar""of the Phantom" "of the Wind"
+	HasExplicitMod "of the Savant" "of the Virtuoso" "of the Genius""of the Leviathan" "of the Titan" "of the Gods" "of the Comet"  
+ 	SetFontSize 40
+	SetBorderColor 255 200 0
+	MinimapIcon 2 Yellow Star 
+	PlayEffect Yellow
+Show  # HP/lvl Str/Dex+Res Ring (Rare)  
+	Class "Ring"	
+	HasExplicitMod "Robust" "Rotund" "Virile" "Quintessential" "Flawless"
+	HasExplicitMod "of the Leviathan" "of the Titan" "of the Gods""of the Jaguar""of the Phantom" "of the Wind"
+	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth" "of the Kaleidoscope" "of Variegation" "of the Rainbow"
+ 	SetFontSize 40
+	SetBorderColor 255 200 0
+	MinimapIcon 2 Yellow Star 
+	PlayEffect Yellow
+Show # ES/lvl Int+Res Ring (Rare)  
+	Class "Ring"	
+	HasExplicitMod "Scintillating" "Incandescent" "Resplendent" "Quintessential" "Flawless"
 	HasExplicitMod "of the Savant" "of the Virtuoso" "of the Genius"
+	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth" "of the Kaleidoscope" "of Variegation" "of the Rainbow"
+ 	SetFontSize 40
+	SetBorderColor 255 200 0
+	MinimapIcon 2 Yellow Star 
+	PlayEffect Yellow
+Show  # HP/ES/lvl Chaos+Res Ring (Rare)  
+	Class "Ring"	
+	HasExplicitMod "Robust" "Rotund" "Virile" "Scintillating" "Incandescent" "Resplendent" "Quintessential" "Flawless"
+	HasExplicitMod "of Expulsion" "of Exile" "of Bameth"
+	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Maelstrom" "of the Lightning" "of Ephij" "of the Volcano" "of the Magma" "of Tzteosh"  "of the Kaleidoscope" "of Variegation" "of the Rainbow"
+ 	SetFontSize 40
+	SetBorderColor 255 200 0
+	MinimapIcon 2 Yellow Star 
+	PlayEffect Yellow
+Show  # HP/ES/lvl All+Res Ring (Rare)  
+	Class "Ring"	
+	HasExplicitMod "Robust" "Rotund" "Virile" "Scintillating" "Incandescent" "Resplendent" "Quintessential" "Flawless"
+	HasExplicitMod "of the Kaleidoscope" "of Variegation" "of the Rainbow"
+	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Maelstrom" "of the Lightning" "of Ephij" "of the Volcano" "of the Magma" "of Tzteosh"  
  	SetFontSize 40
 	SetBorderColor 255 200 0
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow	
-
-Show  # ElemCriDD HP Amulets 
+Show  # HP/ES/lvl 2Res Ring (Rare)  
+	Class "Ring"	
+	HasExplicitMod "Robust" "Rotund" "Virile" "Scintillating" "Incandescent" "Resplendent" "Quintessential" "Flawless"
+	HasExplicitMod "of the Volcano" "of the Magma" "of Tzteosh"
+	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Maelstrom" "of the Lightning" "of Ephij"   
+ 	SetFontSize 40
+	SetBorderColor 255 200 0
+	MinimapIcon 2 Yellow Star 
+	PlayEffect Yellow	
+Show  # HP/ES/lvl 2Res Ring (Rare)  
+	Class "Ring"	
+	HasExplicitMod "Robust" "Rotund" "Virile" "Scintillating" "Incandescent" "Resplendent" "Quintessential" "Flawless"
+	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij"
+	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast"    
+ 	SetFontSize 40
+	SetBorderColor 255 200 0
+	MinimapIcon 2 Yellow Star 
+	PlayEffect Yellow
+Show  # HP/ES Phy/Elem+AtkSpd  Ring
 	Class "Ring"
-	HasExplicitMod "Robust" "Rotund" "Virile"
-	HasExplicitMod "Empowering" "Unleashed" "Overpowering"
-	HasExplicitMod "Polar" "Entombing" "Discharging" "Electrocuting" "Blasting" "Cremating" "of Skill"
+	HasExplicitMod "Robust" "Rotund" "Virile" "Incandescent" "Resplendent" "Dazzling"
+	HasExplicitMod "Gleaming" "Annealed" "Tempered" "Flaring" "Empowering" "Unleashed" "Overpowering" "Devastating" "Polar" "Entombing" "Discharging" "Electrocuting" "Blasting" "Cremating"
+	HasExplicitMod "of Skill"
  	SetFontSize 40
 	SetBorderColor 255 200 0
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow
-
-Show  # PhyCriDD HP Amulets 
-	Class "Ring"
-	HasExplicitMod "Robust" "Rotund" "Virile"
-	HasExplicitMod "Gleaming" "Annealed"
-	HasExplicitMod "of Skill" "of the Maelstrom" "of the Lightning" "of Ephij" "of the Leviathan" "of the Titan" "of the Gods" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth" "of the Kaleidoscope" "of Variegation" "of the Rainbow"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow	
-
-Show  # HP Res/str Ring (Rare)  
-	Class "Ring"	
-	HasExplicitMod "Robust" "Rotund" "Virile"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Leviathan" "of the Titan" "of the Gods"
-	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth" "of the Kaleidoscope" "of Variegation" "of the Rainbow"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow
-
-Show  # HP Res/str Ring (Rare)  
-	Class "Ring"	
-	HasExplicitMod "Robust" "Rotund" "Virile"
-	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Leviathan" "of the Titan" "of the Gods"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth" "of the Kaleidoscope" "of Variegation" "of the Rainbow"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow	
-
-Show  # HP Res/str Ring (Rare)  
-	Class "Ring"	
-	HasExplicitMod "Robust" "Rotund" "Virile"
-	HasExplicitMod "of the Volcano" "of the Magma" "of Tzteosh" "of the Leviathan" "of the Titan" "of the Gods"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of Expulsion" "of Exile" "of Bameth" "of the Kaleidoscope" "of Variegation" "of the Rainbow"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow	
-
-Show  # HP Res/str Ring (Rare)  
-	Class "Ring"	
-	HasExplicitMod "Robust" "Rotund" "Virile"
-	HasExplicitMod "of Expulsion" "of Exile" "of Bameth" "of the Leviathan" "of the Titan" "of the Gods"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of the Kaleidoscope" "of Variegation" "of the Rainbow"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow	
-
-Show  # HP Res/str Ring (Rare)  
-	Class "Ring"	
-	HasExplicitMod "Robust" "Rotund" "Virile"
-	HasExplicitMod "of the Kaleidoscope" "of Variegation" "of the Rainbow" "of the Leviathan" "of the Titan" "of the Gods"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow	
-
-Show # ES Res/int Ring (Rare)  
-	Class "Ring"	
-	HasExplicitMod "Scintillating" "Incandescent" "Resplendent"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Savant" "of the Virtuoso" "of the Genius"
-	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth" "of the Kaleidoscope" "of Variegation" "of the Rainbow"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow
-
-Show # ES Res/int Ring (Rare)  
-	Class "Ring"	
-	HasExplicitMod "Scintillating" "Incandescent" "Resplendent"
-	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Savant" "of the Virtuoso" "of the Genius"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth" "of the Kaleidoscope" "of Variegation" "of the Rainbow"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow
-
-Show # ES Res/int Ring (Rare)  
-	Class "Ring"	
-	HasExplicitMod "Scintillating" "Incandescent" "Resplendent"
-	HasExplicitMod "of the Volcano" "of the Magma" "of Tzteosh" "of the Savant" "of the Virtuoso" "of the Genius"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of Expulsion" "of Exile" "of Bameth" "of the Kaleidoscope" "of Variegation" "of the Rainbow"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow
-
-Show # ES Res/int Ring (Rare)  
-	Class "Ring"	
-	HasExplicitMod "Scintillating" "Incandescent" "Resplendent"
-	HasExplicitMod "of Expulsion" "of Exile" "of Bameth" "of the Savant" "of the Virtuoso" "of the Genius"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of the Kaleidoscope" "of Variegation" "of the Rainbow"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow
-
-Show # ES Res/int Ring (Rare)  
-	Class "Ring"	
-	HasExplicitMod "Scintillating" "Incandescent" "Resplendent"
-	HasExplicitMod "of the Kaleidoscope" "of Variegation" "of the Rainbow" "of the Savant" "of the Virtuoso" "of the Genius"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow
-
-
-Show  # ManaRF Amulets
+  #---------------------------------------
+  ## Amulets
+Show  # HP/ES/MP STR+INT/ALL Amulets
 	Class "Amulets"
-	HasExplicitMod "Mazarine" "Blue" "Zaffre" "Ultramarine"
+	HasExplicitMod "Robust" "Rotund" "Virile" "Scintillating" "Incandescent" "Resplendent" "Mazarine" "Blue" "Zaffre" "Ultramarine"
  	HasExplicitMod "of the Leviathan" "of the Titan" "of the Gods"
-	HasExplicitMod "of the Savant" "of the Virtuoso" "of the Genius"
+	HasExplicitMod "of the Savant" "of the Virtuoso" "of the Genius""of the Universe""of the Infinite""of the Multiverse" 
  	SetFontSize 40
 	SetBorderColor 255 200 0
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow
-
-Show  # ElemCriDD HP Amulets 
+Show  # HP/ES/MP DEX+STR/INT/ALL Amulets
 	Class "Amulets"
-	HasExplicitMod "Rotund" "Virile" "Athlete's"
-	HasExplicitMod "Unleashed" "Overpowering" "Devastating"
-	HasExplicitMod "Fury" "Ferocity" "Destruction" 
+	HasExplicitMod "Robust" "Rotund" "Virile" "Scintillating" "Incandescent" "Resplendent" "Mazarine" "Blue" "Zaffre" "Ultramarine"
+ 	HasExplicitMod "of the Jaguar""of the Phantom" "of the Wind"
+	HasExplicitMod "of the Savant" "of the Virtuoso" "of the Genius""of the Leviathan" "of the Titan" "of the Gods" "of the Universe""of the Infinite""of the Multiverse"  
  	SetFontSize 40
 	SetBorderColor 255 200 0
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow
-
-Show  # PhyCriDD HP Amulets 
+Show  # HP/ES/MP INT+ALL Amulets
 	Class "Amulets"
-	HasExplicitMod "Rotund" "Virile" "Athlete's"
-	HasExplicitMod "Tempered" "Flaring"
-	HasExplicitMod "Fury" "Ferocity" "Destruction" 
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow	
-
-Show  # HP Res/str Amulets (Rare) 
-	Class "Amulets"	
-	HasExplicitMod "Rotund" "Virile" "Athlete's"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Leviathan" "of the Titan" "of the Gods"
-	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth" "of Variegation" "of the Rainbow" "of the Span"
+	HasExplicitMod "Robust" "Rotund" "Virile" "Scintillating" "Incandescent" "Resplendent" "Mazarine" "Blue" "Zaffre" "Ultramarine"
+ 	HasExplicitMod "of the Savant" "of the Virtuoso" "of the Genius" 
+	HasExplicitMod "of the Universe""of the Infinite""of the Multiverse"	 
  	SetFontSize 40
 	SetBorderColor 255 200 0
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow
-
-Show  # HP Res/str Amulets (Rare) 
+Show  # HP Str/Dex/All+Res Amulets (Rare) 
 	Class "Amulets"	
 	HasExplicitMod "Rotund" "Virile" "Athlete's"
-	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Leviathan" "of the Titan" "of the Gods"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth" "of Variegation" "of the Rainbow" "of the Span"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow	
-
-Show  # HP Res/str Amulets (Rare) 
-	Class "Amulets"	
-	HasExplicitMod "Rotund" "Virile" "Athlete's"
-	HasExplicitMod "of the Volcano" "of the Magma" "of Tzteosh" "of the Leviathan" "of the Titan" "of the Gods"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of Expulsion" "of Exile" "of Bameth" "of Variegation" "of the Rainbow" "of the Span"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow	
-
-Show  # HP Res/str Amulets (Rare) 
-	Class "Amulets"	
-	HasExplicitMod "Rotund" "Virile" "Athlete's"
-	HasExplicitMod "of Expulsion" "of Exile" "of Bameth" "of the Leviathan" "of the Titan" "of the Gods"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Variegation" "of the Rainbow" "of the Span"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow	
-
-Show  # HP Res/str Amulets (Rare) 
-	Class "Amulets"	
-	HasExplicitMod "Rotund" "Virile" "Athlete's"
-	HasExplicitMod "of Variegation" "of the Rainbow" "of the Span" "of the Leviathan" "of the Titan" "of the Gods"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow	
-
-Show  # ES Res/int Amulets (Rare) 
-	Class "Amulets"	
-	HasExplicitMod "Incandescent" "Resplendent" "Dazzling"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Savant" "of the Virtuoso" "of the Genius"
-	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth" "of Variegation" "of the Rainbow" "of the Span"
+	HasExplicitMod "of the Leviathan" "of the Titan" "of the Gods" "of the Jaguar""of the Phantom" "of the Wind" "of the Universe""of the Infinite""of the Multiverse"
+	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth" "of Variegation" "of the Rainbow" "of the Span"
  	SetFontSize 40
 	SetBorderColor 255 200 0
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow
-
-Show  # ES Res/int Amulets (Rare) 
+Show  # ES Int/All+Res Amulets (Rare) 
 	Class "Amulets"	
 	HasExplicitMod "Incandescent" "Resplendent" "Dazzling"
-	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast" "of the Savant" "of the Virtuoso" "of the Genius"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth" "of Variegation" "of the Rainbow" "of the Span"
+	HasExplicitMod "of the Savant" "of the Virtuoso" "of the Genius" "of the Universe""of the Infinite""of the Multiverse"
+	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth" "of Variegation" "of the Rainbow" "of the Span"
+ 	SetFontSize 40
+	SetBorderColor 255 200 0
+	MinimapIcon 2 Yellow Star 
+	PlayEffect Yellow
+Show  # HP/ES Chaos+Res Amulets (Rare) 
+	Class "Amulets"	
+	HasExplicitMod "Rotund" "Virile" "Athlete's" "Incandescent" "Resplendent" "Dazzling"
+	HasExplicitMod "of Expulsion" "of Exile" "of Bameth"
+	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh"  "of Variegation" "of the Rainbow" "of the Span"
+ 	SetFontSize 40
+	SetBorderColor 255 200 0
+	MinimapIcon 2 Yellow Star 
+	PlayEffect Yellow
+Show  # HP/ES All+Res Amulets (Rare) 
+	Class "Amulets"	
+	HasExplicitMod "Rotund" "Virile" "Athlete's" "Incandescent" "Resplendent" "Dazzling"
+	HasExplicitMod "of Variegation" "of the Rainbow" "of the Span"
+	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh"  
+ 	SetFontSize 40
+	SetBorderColor 255 200 0
+	MinimapIcon 2 Yellow Star 
+	PlayEffect Yellow
+Show  # HP/ES 2Res Amulets (Rare) 
+	Class "Amulets"	
+	HasExplicitMod "Rotund" "Virile" "Athlete's" "Incandescent" "Resplendent" "Dazzling"
+	HasExplicitMod "of the Volcano" "of the Magma" "of Tzteosh"
+	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast"   
+ 	SetFontSize 40
+	SetBorderColor 255 200 0
+	MinimapIcon 2 Yellow Star 
+	PlayEffect Yellow
+Show  # HP/ES 2Res Amulets (Rare) 
+	Class "Amulets"	
+	HasExplicitMod "Rotund" "Virile" "Athlete's" "Incandescent" "Resplendent" "Dazzling"
+	HasExplicitMod "of the Polar Bear" "of the Ice" "of Haast"
+	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij"    
  	SetFontSize 40
 	SetBorderColor 255 200 0
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow	
-
-Show  # ES Res/int Amulets (Rare) 
-	Class "Amulets"	
-	HasExplicitMod "Incandescent" "Resplendent" "Dazzling"
-	HasExplicitMod "of the Volcano" "of the Magma" "of Tzteosh" "of the Savant" "of the Virtuoso" "of the Genius"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of Expulsion" "of Exile" "of Bameth" "of Variegation" "of the Rainbow" "of the Span"
+Show  # HP/ES Phy/Elem+CriMu  Amulets
+	Class "Amulets"
+	HasExplicitMod "Robust" "Rotund" "Virile" "Incandescent" "Resplendent" "Dazzling"
+	HasExplicitMod "Tempered" "Flaring" "Empowering" "Unleashed" "Overpowering" "Devastating" "Polar" "Entombing" "Discharging" "Electrocuting" "Blasting" "Cremating"
+	HasExplicitMod "of Fury" "of Ferocity" "of Destruction"
  	SetFontSize 40
 	SetBorderColor 255 200 0
 	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow	
-
-Show  # ES Res/int Amulets (Rare) 
-	Class "Amulets"	
-	HasExplicitMod "Incandescent" "Resplendent" "Dazzling"
-	HasExplicitMod "of Expulsion" "of Exile" "of Bameth" "of the Savant" "of the Virtuoso" "of the Genius"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Variegation" "of the Rainbow" "of the Span"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow	
-
-Show  # ES Res/int Amulets (Rare) 
-	Class "Amulets"	
-	HasExplicitMod "Incandescent" "Resplendent" "Dazzling"
-	HasExplicitMod "of Variegation" "of the Rainbow" "of the Span" "of the Savant" "of the Virtuoso" "of the Genius"
-	HasExplicitMod "of the Maelstrom" "of the Lightning" "of Ephij" "of the Polar Bear" "of the Ice" "of Haast" "of the Volcano" "of the Magma" "of Tzteosh" "of Expulsion" "of Exile" "of Bameth"
- 	SetFontSize 40
-	SetBorderColor 255 200 0
-	MinimapIcon 2 Yellow Star 
-	PlayEffect Yellow	
-
-
+	PlayEffect Yellow
+  #---------------------------------------	
+  ## Quivers
 Show  # HP Crit Quivers (Rare) 
 	Class "Quiver"	
 	HasExplicitMod "Virile" "Athlete's" "Fecund"
@@ -1428,9 +1122,8 @@ Show  # HP Crit Quivers (Rare)
 	SetBorderColor 255 200 0
 	MinimapIcon 2 Yellow Star 
 	PlayEffect Yellow
-
+  #---------------------------------------
 #-------------------------------------------
-	
 ## Craft Top Base	
 Show
     BaseType "Vaal Regalia" "Gripped Gloves" "Hubris Circlet" "Sorcerer Gloves" "Sorcerer Boots" "Titanium Spirit Shield" "Astral Plate" "Eternal Burgonet" "Lion Pelt" "Nightmare Bascinet"
@@ -1517,6 +1210,7 @@ Show
 	Rarity = Rare 
 #-------------------------------------------	
 
+## Footer for hide item
 Show	
 	Class "Utility Flasks"	
 Hide
@@ -1525,371 +1219,368 @@ Hide
 Hide
     Rarity = Rare
     SetFontSize 30	
+#-------------------------------------------
 
-
-
-
-
-#Weapon Preffix	Т3-1
-#   Cruel			Req. Lv. 60	(135-154)% increased Physical Damage	
-#   Tyrannical		Req. Lv. 73	(155-169)% increased Physical Damage	
-#   Merciless		Req. Lv. 83	(170-179)% increased Physical Damage
-#   
-#   Conqueror's		Req. Lv. 60	(55-64)% increased Physical Damage, +(83-99) to Accuracy Rating	
-#   Emperor's		Req. Lv. 73	(65-74)% increased Physical Damage, +(100-134) to Accuracy Rating	
-#   Dictator's		Req. Lv. 83	(75-79)% increased Physical Damage, +(135-169) to Accuracy Rating
-#   
-#   Empowering		Req. Lv. 30	(21-30)% increased Elemental Damage with Attack Skills	
-#   Unleashed		Req. Lv. 60	(31-37)% increased Elemental Damage with Attack Skills	
-#   Overpowering		Req. Lv. 81	(38-42)% increased Elemental Damage with Attack Skills 
-#   
-#   Razor-sharp		Req. Lv. 54	Adds (14-19) to (29-35) Physical Damage	
-#   Tempered		Req. Lv. 65	Adds (17-24) to (36-41) Physical Damage	
-#   Flaring			Req. Lv. 77	Adds (20-27) to (41-49) Physical Damage
-#   
-#   Discharging		Req. Lv. 63	Adds (4-11) to (133-140) Lightning Damage	
-#   Electrocuting	Req. Lv. 74	Adds (4-13) to (158-166) Lightning Damage
-#   Vapourising		Req. Lv. 82	Adds (9–24) to (278–315) Lightning Damage
-#   
-#   Polar			Req. Lv. 63	Adds (31-42) to (63-73) Cold Damage
-#   Entombing		Req. Lv. 75	Adds (37-50) to (74-87) Cold Damage
-#   Crystalising	Req. Lv. 82	Adds (77–101) to (152–174) Cold Damage
-#   
-#   Blasting		Req. Lv. 62	Adds (38-51) to (77-89) Fire Damage	
-#   Cremating		Req. Lv. 74	Adds (45-61) to (91-106) Fire Damage
-#   Carbonising	    Req. Lv. 82	Adds (82–112) to (167–194) Fire Damage  
-#      
-#Weapon Suffix Т3-1
-#   of Fame			Req. Lv. 45	(20-22)% increased Attack Speed	
-#   of Infamy		Req. Lv. 60	(23-25)% increased Attack Speed	
-#   of Celebration	Req. Lv. 77	(26-27)% increased Attack Speed
-#   
-#   of Puncturing	Req. Lv. 44	(25-29)% increased Critical Strike Chance	
-#   of Penetrating	Req. Lv. 59	(30-34)% increased Critical Strike Chance	
-#   of Incision		Req. Lv. 73	(35-38)% increased Critical Strike Chance
-#   
-#   of Fury			Req. Lv. 44	+(25-29)% to Global Critical Strike Multiplier	
-#   of Ferocity		Req. Lv. 59	+(30-34)% to Global Critical Strike Multiplier	
-#   of Destruction	Req. Lv. 73	+(35-38)% to Global Critical Strike Multiplier
-
-#Quivers Preffix
-#   Unleashed		Req. Lv. 60	(31-36)% increased Elemental Damage with Attack Skills	
-#   Overpowering	Req. Lv. 81	(37-42)% increased Elemental Damage with Attack Skills	
-#   Devastating		Req. Lv. 86	(43-50)% increased Elemental Damage with Attack Skills
-#
-#   Polished		Req. Lv. 19	Adds (3-4) to (6-7) Physical Damage to Attacks	
-#   Honed			Req. Lv. 28	Adds (4-6) to (9-10) Physical Damage to Attacks
-#   
-#   Snapping		Req. Lv. 22	Adds (1-2) to (22-23) Lightning Damage to Attacks	
-#   Crackling		Req. Lv. 28	Adds (1-2) to (27-28) Lightning Damage to Attacks
-#   
-#   Icy				Req. Lv. 21	Adds (5-7) to (10-12) Cold Damage to Attacks	
-#   Frigid			Req. Lv. 29	Adds (6-9) to (13-16) Cold Damage to Attacks
-#   
-#   Smoking			Req. Lv. 20	Adds (5-7) to (11-13) Fire Damage to Attacks	
-#   Burning			Req. Lv. 28	Adds (7-10) to (15-18) Fire Damage to Attacks
-#	
-#	Virile			Req. Lv. 44	+(70-79) to maximum Life	
-#   Athlete's		Req. Lv. 54	+(80-89) to maximum Life	
-#   Fecund			Req. Lv. 64	+(90-99) to maximum Life
-#   
-#Quivers Suffix   
-#   of Penetrating	Req. Lv. 58	(30-34)% increased Global Critical Strike Chance	
-#   of Incision		Req. Lv. 72	(35-38)% increased Global Critical Strike Chance	
-#   of Rending		Req. Lv. 85	(39-44)% increased Global Critical Strike Chance
-#   
-#   of Fury			Req. Lv. 45	+(25-29)% to Global Critical Strike Multiplier	
-#   of Ferocity		Req. Lv. 59	+(30-34)% to Global Critical Strike Multiplier	
-#   of Destruction	Req. Lv. 74	+(35-38)% to Global Critical Strike Multiplier
-#   
-#   of Skill		Req. Lv. 1	(5-7)% increased Attack Speed	
-#   of Ease			Req. Lv. 11	(8-10)% increased Attack Speed
-
-#Boots Preffix
-#   Inculcated		Req. Lv. 60	(68-79)% increased Armour and Energy Shield	
-#   Interpolated	Req. Lv. 72	(80-91)% increased Armour and Energy Shield	
-#   Inspired		Req. Lv. 84	(92-100)% increased Armour and Energy Shield	
-#   Naga's			Req. Lv. 44	(27-32)% increased Armour and Energy Shield, (12-13)% increased Stun and Block Recovery	
-#   Djinn's			Req. Lv. 60	(33-38)% increased Armour and Energy Shield, (14-15)% increased Stun and Block Recovery	
-#   Seraphim's		Req. Lv. 78	(39-42)% increased Armour and Energy Shield, (16-17)% increased Stun and Block Recovery
-#
-#   Anointed		Req. Lv. 18	+(9-25) to Armour, +(9-12) to maximum Energy Shield	
-#   Sanctified		Req. Lv. 30	+(27-45) to Armour, +(18-22) to maximum Energy Shield
-#   
-#   Evanescent		Req. Lv. 60	(68-79)% increased Evasion and Energy Shield	
-#   Unreal			Req. Lv. 72	(80-91)% increased Evasion and Energy Shield	
-#   Illusory		Req. Lv. 84	(92-100)% increased Evasion and Energy Shield   
-#   Wasp's			Req. Lv. 44	(27-32)% increased Evasion and Energy Shield, (12-13)% increased Stun and Block Recovery	
-#   Dragonfly's		Req. Lv. 60	(33-38)% increased Evasion and Energy Shield, (14-15)% increased Stun and Block Recovery	
-#   Hummingbird's	Req. Lv. 78	(39-42)% increased Evasion and Energy Shield, (16-17)% increased Stun and Block Recovery
-#   
-#   Nymph's			Req. Lv. 18	+(9-25) to Evasion Rating, +(9-12) to maximum Energy Shield	
-#   Sylph's			Req. Lv. 30	+(27-45) to Evasion Rating, +(18-22) to maximum Energy Shield
-#	
-#   Dauntless		Req. Lv. 60	(68-79)% increased Energy Shield	
-#   Indomitable		Req. Lv. 72	(80-91)% increased Energy Shield	
-#   Unassailable	Req. Lv. 84	(92-100)% increased Energy Shield   
-#   Naga's			Req. Lv. 44	(27-32)% increased Energy Shield, (12-13)% increased Stun and Block Recovery	
-#   Djinn's			Req. Lv. 60	(33-38)% increased Energy Shield, (14-15)% increased Stun and Block Recovery	
-#   Seraphim's		Req. Lv. 78	(39-42)% increased Energy Shield, (16-17)% increased Stun and Block Recovery	
-#   
-#   Radiating		Req. Lv. 29	+(24-30) to maximum Energy Shield	
-#   Pulsing			Req. Lv. 35	+(31-38) to maximum Energy Shield	
-#   Seething		Req. Lv. 43	+(39-49) to maximum Energy Shield
-#   
-#   Rotund			Req. Lv. 36	+(60-69) to maximum Life	
-#   Virile			Req. Lv. 44	+(70-79) to maximum Life	
-#   Athlete's		Req. Lv. 54	+(80-89) to maximum Life
-#   
-#   Mazarine		Req. Lv. 69	+(60-64) to maximum Mana	
-#   Blue			Req. Lv. 75	+(65-68) to maximum Mana	
-#   Zaffre			Req. Lv. 81	+(69-73) to maximum Mana
-#   
-#   Gazelle's		Req. Lv. 40	25% increased Movement Speed	
-#   Cheetah's		Req. Lv. 55	30% increased Movement Speed	
-#   Hellion's		Req. Lv. 86	35% increased Movement Speed
-#
-#Boots Suffix
-#   of the Maelstrom Req. Lv. 60 +(36-41)% to Lightning Resistance	
-#   of the Lightning Req. Lv. 72 +(42-45)% to Lightning Resistance	
-#   of Ephij		Req. Lv. 84	+(46-48)% to Lightning Resistance
-#   
-#   of the Polar Bear Req. Lv. 60 +(36-41)% to Cold Resistance	
-#   of the Ice		Req. Lv. 72	+(42-45)% to Cold Resistance	
-#   of Haast		Req. Lv. 84	+(46-48)% to Cold Resistance
-#   
-#   of the Volcano	Req. Lv. 60	+(36-41)% to Fire Resistance	
-#   of the Magma	Req. Lv. 72	+(42-45)% to Fire Resistance	
-#   of Tzteosh		Req. Lv. 84	+(46-48)% to Fire Resistance
-#   
-#   of Expulsion	Req. Lv. 56	+(21-25)% to Chaos Resistance	
-#   of Exile		Req. Lv. 65	+(26-30)% to Chaos Resistance	
-#   of Bameth		Req. Lv. 81	+(31-35)% to Chaos Resistance
-#   
-#   of the Leviathan Req. Lv. 66 +(38-42) to Strength	
-#   of the Titan	Req. Lv. 74	+(43-50) to Strength	
-#   of the Gods		Req. Lv. 82	+(51-55) to Strength
-#
-#   of the Jaguar	Req. Lv. 66	+(38-42) to Dexterity	
-#   of the Phantom	Req. Lv. 74	+(43-50) to Dexterity	
-#   of the Wind		Req. Lv. 82	+(51-55) to Dexterity
-#   
-#   of the Savant	Req. Lv. 66	+(38-42) to Intelligence	
-#   of the Virtuoso	Req. Lv. 74	+(43-50) to Intelligence	
-#   of the Genius	Req. Lv. 82	+(51-55) to Intelligence
-
-
-#Gloves Preffix      like a boots but...
-#	Polished		Req. Lv. 19	Adds (3-4) to (6-7) Physical Damage to Attacks	
-#	Honed			Req. Lv. 28	Adds (4-6) to (9-10) Physical Damage to Attacks
-#	
-#	Snapping		Req. Lv. 22	Adds (1-2) to (22-23) Lightning Damage to Attacks	
-#	Crackling		Req. Lv. 28	Adds (1-2) to (27-28) Lightning Damage to Attacks
-#	
-#	Icy				Req. Lv. 21	Adds (5-7) to (10-12) Cold Damage to Attacks	
-#	Frigid			Req. Lv. 29	Adds (6-9) to (13-16) Cold Damage to Attacks
-#	
-#	Smoking			Req. Lv. 20	Adds (5-7) to (11-13) Fire Damage to Attacks	
-#   Burning			Req. Lv. 28	Adds (7-10) to (15-18) Fire Damage to Attacks
-#	
-#Gloves Suffix      like a boots but...	
-#   of the Ranger	Req. Lv. 63	+(251-320) to Accuracy Rating	
-#   of the Assassin	Req. Lv. 76	+(321-400) to Accuracy Rating	
-#   of Lioneye		Req. Lv. 85	+(401-500) to Accuracy Rating	
-#   
-#   of Ease			Req. Lv. 11	(8-10)% increased Attack Speed	
-#   of Mastery		Req. Lv. 22	(11-13)% increased Attack Speed	
-#   of Grandmastery	Req. Lv. 76	(14-16)% increased Attack Speed
-
-
-#Helmet Preffix
-# Lua error in Module
-#
-#Helmet Suffix
-# Lua error in Module
-
-
-#shield Preffix like a boots but...
-#	Interpermeated	Req. Lv. 86	(101-110)% increased Armour and Energy Shield
-#	
-#	Hallowed		Req. Lv. 46	+(46-103) to Armour, +(30-36) to maximum Energy Shield	
-#	Beatified		Req. Lv. 69	+(105-241) to Armour, +(58-67) to maximum Energy Shield	
-#
-#	Incorporeal		Req. Lv. 86	(101-110)% increased Evasion and Energy Shield
-#	
-#	Cherub's		Req. Lv. 46	+(46-103) to Evasion Rating, +(30-36) to maximum Energy Shield	
-#   Spirit's		Req. Lv. 69	+(105-241) to Evasion Rating, +(58-67) to maximum Energy Shield	
-# 
-#	Unfaltering		Req. Lv. 86	(101-110)% increased Energy Shield
-#	
-#   Scintillating	Req. Lv. 60	+(62-76) to maximum Energy Shield	
-#   Incandescent	Req. Lv. 69	+(77-90) to maximum Energy Shield
-#	
-#   Fecund			Req. Lv. 64	+(90-99) to maximum Life	
-#   Vigorous		Req. Lv. 73	+(100-109) to maximum Life	
-#
-#   Wicked			Req. Lv. 30	(18-22)% increased Global Physical Damage	
-#   Cruel			Req. Lv. 60	(23-28)% increased Global Physical Damage	
-#   Merciless		Req. Lv. 81	(29-33)% increased Global Physical Damage
-#
-#shield Suffix like a boots but...
-#   of Variegation	Req. Lv. 48	+(12-14)% to all Elemental Resistances	
-#   of the Rainbow	Req. Lv. 60	+(15-16)% to all Elemental Resistances	
-#   of the Span		Req. Lv. 85	+(17-18)% to all Elemental Resistances
-#   
-#   of Talent		Req. Lv. 2	(5-7)% increased Cast Speed	
-#   of Nimbleness	Req. Lv. 15	(8-10)% increased Cast Speed	
-#   of Expertise	Req. Lv. 30	(11-13)% increased Cast Speed
-# 
-#   of Skill		Req. Lv. 1	(5-7)% increased Attack Speed	
-#   of Ease			Req. Lv. 11	(8-10)% increased Attack Speed	
-#   of Mastery		Req. Lv. 22	(11-13)% increased Attack Speed
-#   
-#   of Walling		Req. Lv. 58	+(4-6)% Chance to Block	
-#   of Blocking		Req. Lv. 85	+(7-8)% Chance to Block
-#   
-#   of the Barrier	Req. Lv. 30	(7-9)% Chance to Block Spell Damage	
-#   of the Bulwark	Req. Lv. 60	(10-12)% Chance to Block Spell Damage
-#   
-#   of Calamity		Req. Lv. 41	(60-79)% increased Critical Strike Chance for Spells	
-#   of Ruin			Req. Lv. 59	(80-99)% increased Critical Strike Chance for Spells	
-#   of Unmaking		Req. Lv. 76	(100-109)% increased Critical Strike Chance for Spells
-
-
-#body armours Preffix    like a shield but...
-#	Consecrated		Req. Lv. 73	+(243-300) to Armour, +(69-75) to maximum Energy Shield
-#
-#   Eidolon's		Req. Lv. 73	+(243-300) to Evasion Rating, +(69-75) to maximum Energy Shield  
-#
-#   Resplendent		Req. Lv. 75	+(91-100) to maximum Energy Shield
-#   
-#   Rapturous		Req. Lv. 81	+(110-119) to maximum Life	
-#   Prime			Req. Lv. 86	+(120-129) to maximum Life
-#   
-#body armours Suffix like a boots
-
-
-#belts Preffix
-#   Incandescent	Req. Lv. 68	+(38-43) to maximum Energy Shield	
-#   Resplendent		Req. Lv. 74	+(44-47) to maximum Energy Shield	
-#   Dazzling		Req. Lv. 80	+(48-51) to maximum Energy Shield
-#   
-#	Virile			Req. Lv. 44	+(70-79) to maximum Life	
-#	Athlete's		Req. Lv. 54	+(80-89) to maximum Life	
-#	Fecund			Req. Lv. 64	+(90-99) to maximum Life
-#
-#   Carapaced		Req. Lv. 71	+(323-400) to Armour	
-#   Encased			Req. Lv. 83	+(401-460) to Armour	
-#   Enveloped		Req. Lv. 86	+(461-540) to Armour
-#   
-#   Unleashed		Req. Lv. 60	(31-36)% increased Elemental Damage with Attack Skills	
-#   Overpowering	Req. Lv. 81	(37-42)% increased Elemental Damage with Attack Skills	
-#   Devastating		Req. Lv. 86	(43-50)% increased Elemental Damage with Attack Skills
-#   
-#belts Suffix
-#   of Refilling	Req. Lv. 2	(10-20)% increased Flask Charges gained	
-#   of Overflowing	Req. Lv. 85	(21-30)% increased Flask Charges gained	
-#   of Sipping		Req. Lv. 3	(20-10)% reduced Flask Charges used
-#   of Savouring	Req. Lv. 7	(10-20)% increased Flask effect duration
-#   
-#   of the Titan	Req. Lv. 74	+(43-50) to Strength	
-#   of the Gods		Req. Lv. 82	+(51-55) to Strength	
-#   of the Godslayer Req. Lv. 85 +(56-60) to Strength
-#   
-#   of the Combatant Req. Lv. 44 (12-13)% reduced Enemy Stun Threshold	
-#   of the Gladiator Req. Lv. 58 (14-15)% reduced Enemy Stun Threshold
-#   of Slamming		Req. Lv. 44	(26-30)% increased Stun Duration on Enemies	
-#   of Staggering	Req. Lv. 58	(31-35)% increased Stun Duration on Enemies
-
-#Rings Preffix
-#   Quintessential	Req. Lv. 50	+2 to Level of Socketed Gems	
-#   Flawless		Req. Lv. 76	+3 to Level of Socketed Gems
-#   
-#   Empowering		Req. Lv. 30	(21-30)% increased Elemental Damage with Attack Skills	
-#   Unleashed		Req. Lv. 60	(31-36)% increased Elemental Damage with Attack Skills	
-#   Overpowering	Req. Lv. 81	(37-42)% increased Elemental Damage with Attack Skills
-#   
-#   Honed			Req. Lv. 28	Adds (4-6) to (9-10) Physical Damage to Attacks	
-#   Gleaming		Req. Lv. 35	Adds (5-7) to (11-12) Physical Damage to Attacks	
-#   Annealed		Req. Lv. 44	Adds (6-9) to (13-15) Physical Damage to Attacks
-#   
-#   Shocking		Req. Lv. 52	Adds (2-5) to (47-50) Lightning Damage to Attacks	
-#   Discharging		Req. Lv. 64	Adds (3-6) to (57-61) Lightning Damage to Attacks	
-#   Electrocuting	Req. Lv. 76	Adds (3-7) to (68-72) Lightning Damage to Attacks
-
-#   Glaciated		Req. Lv. 53	Adds (12-16) to (24-28) Cold Damage to Attacks	
-#   Polar			Req. Lv. 65	Adds (14-19) to (29-34) Cold Damage to Attacks	
-#   Entombing		Req. Lv. 77	Adds (17-22) to (34-40) Cold Damage to Attacks
-
-#   Incinerating	Req. Lv. 52	Adds (13-18) to (27-31) Fire Damage to Attacks	
-#   Blasting		Req. Lv. 64	Adds (16-22) to (32-38) Fire Damage to Attacks	
-#   Cremating		Req. Lv. 76	Adds (19-25) to (39-45) Fire Damage to Attacks
-#   
-#   Scintillating	Req. Lv. 59	+(32-37) to maximum Energy Shield	
-#   Incandescent	Req. Lv. 68	+(38-43) to maximum Energy Shield	
-#   Resplendent		Req. Lv. 74	+(44-47) to maximum Energy Shield
-#   
-#   Robust			Req. Lv. 30	+(50-59) to maximum Life	
-#   Rotund			Req. Lv. 36	+(60-69) to maximum Life	
-#   Virile			Req. Lv. 44	+(70-79) to maximum Life
-#   
-#   Blue			Req. Lv. 75	+(65-68) to maximum Mana	
-#   Zaffre			Req. Lv. 81	+(69-73) to maximum Mana	
-#   Ultramarine		Req. Lv. 85	+(74-78) to maximum Mana
-#  
-#Rings Suffix
-#   of Skill		Req. Lv. 1	(5-7)% increased Attack Speed	
-#   of Talent		Req. Lv. 2	(5-7)% increased Cast Speed
-#
-#   of Archaeology	Req. Lv. 53	(15-20)% increased Rarity of Items found	
-#   of Excavation	Req. Lv. 75	(21-26)% increased Rarity of Items found	
-#
-#   of the Deadeye	Req. Lv. 50	+(201-250) to Accuracy Rating	
-#   of the Ranger	Req. Lv. 63	+(251-320) to Accuracy Rating	
-#   of the Assassin	Req. Lv. 76	+(321-400) to Accuracy Rating
-#
-#   of Shining		Req. Lv. 8	5% increased Light Radius, +(10-20) to Accuracy Rating	
-#   of Light		Req. Lv. 15	10% increased Light Radius, +(21-40) to Accuracy Rating	
-#   of Radiance		Req. Lv. 30	15% increased Light Radius, (5-10)% increased Global Accuracy Rating
-#   
-#   of Electricity	Req. Lv. 36	(13-17)% increased Lightning Damage	
-#   of Voltage		Req. Lv. 50	(18-22)% increased Lightning Damage	
-#   of Ice			Req. Lv. 36	(13-17)% increased Cold Damage	
-#   of Rime			Req. Lv. 50	(18-22)% increased Cold Damage   
-#   of Cinders		Req. Lv. 36	(13-17)% increased Fire Damage	
-#   of Flames		Req. Lv. 50	(18-22)% increased Fire Damage	   
-#
-#   of the Maelstrom Req. Lv. 60 +(36-41)% to Lightning Resistance	
-#   of the Lightning Req. Lv. 72 +(42-45)% to Lightning Resistance	
-#   of Ephij		Req. Lv. 84	+(46-48)% to Lightning Resistance		
-#
-#   of the Polar Bear Req. Lv. 60 +(36-41)% to Cold Resistance	
-#   of the Ice		Req. Lv. 72	+(42-45)% to Cold Resistance	
-#   of Haast		Req. Lv. 84	+(46-48)% to Cold Resistance	 
-#
-#   of the Volcano	Req. Lv. 60	+(36-41)% to Fire Resistance	
-#   of the Magma	Req. Lv. 72	+(42-45)% to Fire Resistance	
-#   of Tzteosh		Req. Lv. 84	+(46-48)% to Fire Resistance   
-#   
-#   of Expulsion	Req. Lv. 56	+(21-25)% to Chaos Resistance	
-#   of Exile		Req. Lv. 65	+(26-30)% to Chaos Resistance	
-#   of Bameth		Req. Lv. 81	+(31-35)% to Chaos Resistance	
-#   
-#   of the Kaleidoscope	Req. Lv. 36	+(9-11)% to all Elemental Resistances	
-#   of Variegation	Req. Lv. 48	+(12-14)% to all Elemental Resistances	
-#   of the Rainbow	Req. Lv. 60	+(15-16)% to all Elemental Resistances	 	
-#   	
-#   of the Leviathan Req. Lv. 66 +(38-42) to Strength	
-#   of the Titan	Req. Lv. 74	+(43-50) to Strength	
-#   of the Gods		Req. Lv. 82	+(51-55) to Strength
-#   
-#   of the Jaguar	Req. Lv. 66	+(38-42) to Dexterity	
-#   of the Phantom	Req. Lv. 74	+(43-50) to Dexterity	
-#   of the Wind		Req. Lv. 82	+(51-55) to Dexterity	
-#   
-#   of the Savant	Req. Lv. 66	+(38-42) to Intelligence	
-#   of the Virtuoso	Req. Lv. 74	+(43-50) to Intelligence	
-#   of the Genius	Req. Lv. 82	+(51-55) to Intelligence	
-#   
-#   of the Meteor	Req. Lv. 22	+(9-12) to all Attributes	
-#   of the Comet	Req. Lv. 33	+(13-16) to all Attributes
+#//Weapon Preffix	Т3-1
+#//   Cruel			Req. Lv. 60	(135-154)% increased Physical Damage	
+#//   Tyrannical		Req. Lv. 73	(155-169)% increased Physical Damage	
+#//   Merciless		Req. Lv. 83	(170-179)% increased Physical Damage
+#//   
+#//   Conqueror's		Req. Lv. 60	(55-64)% increased Physical Damage, +(83-99) to Accuracy Rating	
+#//   Emperor's		Req. Lv. 73	(65-74)% increased Physical Damage, +(100-134) to Accuracy Rating	
+#//   Dictator's		Req. Lv. 83	(75-79)% increased Physical Damage, +(135-169) to Accuracy Rating
+#//   
+#//   Empowering		Req. Lv. 30	(21-30)% increased Elemental Damage with Attack Skills	
+#//   Unleashed		Req. Lv. 60	(31-37)% increased Elemental Damage with Attack Skills	
+#//   Overpowering		Req. Lv. 81	(38-42)% increased Elemental Damage with Attack Skills 
+#//   
+#//   Razor-sharp		Req. Lv. 54	Adds (14-19) to (29-35) Physical Damage	
+#//   Tempered		Req. Lv. 65	Adds (17-24) to (36-41) Physical Damage	
+#//   Flaring			Req. Lv. 77	Adds (20-27) to (41-49) Physical Damage
+#//   
+#//   Discharging		Req. Lv. 63	Adds (4-11) to (133-140) Lightning Damage	
+#//   Electrocuting	Req. Lv. 74	Adds (4-13) to (158-166) Lightning Damage
+#//   Vapourising		Req. Lv. 82	Adds (9–24) to (278–315) Lightning Damage
+#//   
+#//   Polar			Req. Lv. 63	Adds (31-42) to (63-73) Cold Damage
+#//   Entombing		Req. Lv. 75	Adds (37-50) to (74-87) Cold Damage
+#//   Crystalising	Req. Lv. 82	Adds (77–101) to (152–174) Cold Damage
+#//   
+#//   Blasting		Req. Lv. 62	Adds (38-51) to (77-89) Fire Damage	
+#//   Cremating		Req. Lv. 74	Adds (45-61) to (91-106) Fire Damage
+#//   Carbonising	    Req. Lv. 82	Adds (82–112) to (167–194) Fire Damage  
+#//      
+#//Weapon Suffix Т3-1
+#//   of Fame			Req. Lv. 45	(20-22)% increased Attack Speed	
+#//   of Infamy		Req. Lv. 60	(23-25)% increased Attack Speed	
+#//   of Celebration	Req. Lv. 77	(26-27)% increased Attack Speed
+#//   
+#//   of Puncturing	Req. Lv. 44	(25-29)% increased Critical Strike Chance	
+#//   of Penetrating	Req. Lv. 59	(30-34)% increased Critical Strike Chance	
+#//   of Incision		Req. Lv. 73	(35-38)% increased Critical Strike Chance
+#//   
+#//   of Fury			Req. Lv. 44	+(25-29)% to Global Critical Strike Multiplier	
+#//   of Ferocity		Req. Lv. 59	+(30-34)% to Global Critical Strike Multiplier	
+#//   of Destruction	Req. Lv. 73	+(35-38)% to Global Critical Strike Multiplier
+#//
+#//Quivers Preffix
+#//   Unleashed		Req. Lv. 60	(31-36)% increased Elemental Damage with Attack Skills	
+#//   Overpowering	Req. Lv. 81	(37-42)% increased Elemental Damage with Attack Skills	
+#//   Devastating		Req. Lv. 86	(43-50)% increased Elemental Damage with Attack Skills
+#//
+#//   Polished		Req. Lv. 19	Adds (3-4) to (6-7) Physical Damage to Attacks	
+#//   Honed			Req. Lv. 28	Adds (4-6) to (9-10) Physical Damage to Attacks
+#//   
+#//   Snapping		Req. Lv. 22	Adds (1-2) to (22-23) Lightning Damage to Attacks	
+#//   Crackling		Req. Lv. 28	Adds (1-2) to (27-28) Lightning Damage to Attacks
+#//   
+#//   Icy				Req. Lv. 21	Adds (5-7) to (10-12) Cold Damage to Attacks	
+#//   Frigid			Req. Lv. 29	Adds (6-9) to (13-16) Cold Damage to Attacks
+#//   
+#//   Smoking			Req. Lv. 20	Adds (5-7) to (11-13) Fire Damage to Attacks	
+#//   Burning			Req. Lv. 28	Adds (7-10) to (15-18) Fire Damage to Attacks
+#//	
+#//	Virile			Req. Lv. 44	+(70-79) to maximum Life	
+#//   Athlete's		Req. Lv. 54	+(80-89) to maximum Life	
+#//   Fecund			Req. Lv. 64	+(90-99) to maximum Life
+#//   
+#//Quivers Suffix   
+#//   of Penetrating	Req. Lv. 58	(30-34)% increased Global Critical Strike Chance	
+#//   of Incision		Req. Lv. 72	(35-38)% increased Global Critical Strike Chance	
+#//   of Rending		Req. Lv. 85	(39-44)% increased Global Critical Strike Chance
+#//   
+#//   of Fury			Req. Lv. 45	+(25-29)% to Global Critical Strike Multiplier	
+#//   of Ferocity		Req. Lv. 59	+(30-34)% to Global Critical Strike Multiplier	
+#//   of Destruction	Req. Lv. 74	+(35-38)% to Global Critical Strike Multiplier
+#//   
+#//   of Skill		Req. Lv. 1	(5-7)% increased Attack Speed	
+#//   of Ease			Req. Lv. 11	(8-10)% increased Attack Speed
+#//
+#//Boots Preffix
+#//   Inculcated		Req. Lv. 60	(68-79)% increased Armour and Energy Shield	
+#//   Interpolated	Req. Lv. 72	(80-91)% increased Armour and Energy Shield	
+#//   Inspired		Req. Lv. 84	(92-100)% increased Armour and Energy Shield	
+#//   Naga's			Req. Lv. 44	(27-32)% increased Armour and Energy Shield, (12-13)% increased Stun and Block Recovery	
+#//   Djinn's			Req. Lv. 60	(33-38)% increased Armour and Energy Shield, (14-15)% increased Stun and Block Recovery	
+#//   Seraphim's		Req. Lv. 78	(39-42)% increased Armour and Energy Shield, (16-17)% increased Stun and Block Recovery
+#//
+#//   Anointed		Req. Lv. 18	+(9-25) to Armour, +(9-12) to maximum Energy Shield	
+#//   Sanctified		Req. Lv. 30	+(27-45) to Armour, +(18-22) to maximum Energy Shield
+#//   
+#//   Evanescent		Req. Lv. 60	(68-79)% increased Evasion and Energy Shield	
+#//   Unreal			Req. Lv. 72	(80-91)% increased Evasion and Energy Shield	
+#//   Illusory		Req. Lv. 84	(92-100)% increased Evasion and Energy Shield   
+#//   Wasp's			Req. Lv. 44	(27-32)% increased Evasion and Energy Shield, (12-13)% increased Stun and Block Recovery	
+#//   Dragonfly's		Req. Lv. 60	(33-38)% increased Evasion and Energy Shield, (14-15)% increased Stun and Block Recovery	
+#//   Hummingbird's	Req. Lv. 78	(39-42)% increased Evasion and Energy Shield, (16-17)% increased Stun and Block Recovery
+#//   
+#//   Nymph's			Req. Lv. 18	+(9-25) to Evasion Rating, +(9-12) to maximum Energy Shield	
+#//   Sylph's			Req. Lv. 30	+(27-45) to Evasion Rating, +(18-22) to maximum Energy Shield
+#//	
+#//   Dauntless		Req. Lv. 60	(68-79)% increased Energy Shield	
+#//   Indomitable		Req. Lv. 72	(80-91)% increased Energy Shield	
+#//   Unassailable	Req. Lv. 84	(92-100)% increased Energy Shield   
+#//   Naga's			Req. Lv. 44	(27-32)% increased Energy Shield, (12-13)% increased Stun and Block Recovery	
+#//   Djinn's			Req. Lv. 60	(33-38)% increased Energy Shield, (14-15)% increased Stun and Block Recovery	
+#//   Seraphim's		Req. Lv. 78	(39-42)% increased Energy Shield, (16-17)% increased Stun and Block Recovery	
+#//   
+#//   Radiating		Req. Lv. 29	+(24-30) to maximum Energy Shield	
+#//   Pulsing			Req. Lv. 35	+(31-38) to maximum Energy Shield	
+#//   Seething		Req. Lv. 43	+(39-49) to maximum Energy Shield
+#//   
+#//   Rotund			Req. Lv. 36	+(60-69) to maximum Life	
+#//   Virile			Req. Lv. 44	+(70-79) to maximum Life	
+#//   Athlete's		Req. Lv. 54	+(80-89) to maximum Life
+#//   
+#//   Mazarine		Req. Lv. 69	+(60-64) to maximum Mana	
+#//   Blue			Req. Lv. 75	+(65-68) to maximum Mana	
+#//   Zaffre			Req. Lv. 81	+(69-73) to maximum Mana
+#//   
+#//   Gazelle's		Req. Lv. 40	25% increased Movement Speed	
+#//   Cheetah's		Req. Lv. 55	30% increased Movement Speed	
+#//   Hellion's		Req. Lv. 86	35% increased Movement Speed
+#//
+#//Boots Suffix
+#//   of the Maelstrom Req. Lv. 60 +(36-41)% to Lightning Resistance	
+#//   of the Lightning Req. Lv. 72 +(42-45)% to Lightning Resistance	
+#//   of Ephij		Req. Lv. 84	+(46-48)% to Lightning Resistance
+#//   
+#//   of the Polar Bear Req. Lv. 60 +(36-41)% to Cold Resistance	
+#//   of the Ice		Req. Lv. 72	+(42-45)% to Cold Resistance	
+#//   of Haast		Req. Lv. 84	+(46-48)% to Cold Resistance
+#//   
+#//   of the Volcano	Req. Lv. 60	+(36-41)% to Fire Resistance	
+#//   of the Magma	Req. Lv. 72	+(42-45)% to Fire Resistance	
+#//   of Tzteosh		Req. Lv. 84	+(46-48)% to Fire Resistance
+#//   
+#//   of Expulsion	Req. Lv. 56	+(21-25)% to Chaos Resistance	
+#//   of Exile		Req. Lv. 65	+(26-30)% to Chaos Resistance	
+#//   of Bameth		Req. Lv. 81	+(31-35)% to Chaos Resistance
+#//   
+#//   of the Leviathan Req. Lv. 66 +(38-42) to Strength	
+#//   of the Titan	Req. Lv. 74	+(43-50) to Strength	
+#//   of the Gods		Req. Lv. 82	+(51-55) to Strength
+#//
+#//   of the Jaguar	Req. Lv. 66	+(38-42) to Dexterity	
+#//   of the Phantom	Req. Lv. 74	+(43-50) to Dexterity	
+#//   of the Wind		Req. Lv. 82	+(51-55) to Dexterity
+#//   
+#//   of the Savant	Req. Lv. 66	+(38-42) to Intelligence	
+#//   of the Virtuoso	Req. Lv. 74	+(43-50) to Intelligence	
+#//   of the Genius	Req. Lv. 82	+(51-55) to Intelligence
+#//
+#//
+#//Gloves Preffix      like a boots but...
+#//	Polished		Req. Lv. 19	Adds (3-4) to (6-7) Physical Damage to Attacks	
+#//	Honed			Req. Lv. 28	Adds (4-6) to (9-10) Physical Damage to Attacks
+#//	
+#//	Snapping		Req. Lv. 22	Adds (1-2) to (22-23) Lightning Damage to Attacks	
+#//	Crackling		Req. Lv. 28	Adds (1-2) to (27-28) Lightning Damage to Attacks
+#//	
+#//	Icy				Req. Lv. 21	Adds (5-7) to (10-12) Cold Damage to Attacks	
+#//	Frigid			Req. Lv. 29	Adds (6-9) to (13-16) Cold Damage to Attacks
+#//	
+#//	Smoking			Req. Lv. 20	Adds (5-7) to (11-13) Fire Damage to Attacks	
+#//   Burning			Req. Lv. 28	Adds (7-10) to (15-18) Fire Damage to Attacks
+#//	
+#//Gloves Suffix      like a boots but...	
+#//   of the Ranger	Req. Lv. 63	+(251-320) to Accuracy Rating	
+#//   of the Assassin	Req. Lv. 76	+(321-400) to Accuracy Rating	
+#//   of Lioneye		Req. Lv. 85	+(401-500) to Accuracy Rating	
+#//   
+#//   of Ease			Req. Lv. 11	(8-10)% increased Attack Speed	
+#//   of Mastery		Req. Lv. 22	(11-13)% increased Attack Speed	
+#//   of Grandmastery	Req. Lv. 76	(14-16)% increased Attack Speed
+#//
+#//
+#//Helmet Preffix
+#// Lua error in Module
+#//
+#//Helmet Suffix
+#// Lua error in Module
+#//
+#//
+#//shield Preffix like a boots but...
+#//	Interpermeated	Req. Lv. 86	(101-110)% increased Armour and Energy Shield
+#//	
+#//	Hallowed		Req. Lv. 46	+(46-103) to Armour, +(30-36) to maximum Energy Shield	
+#//	Beatified		Req. Lv. 69	+(105-241) to Armour, +(58-67) to maximum Energy Shield	
+#//
+#//	Incorporeal		Req. Lv. 86	(101-110)% increased Evasion and Energy Shield
+#//	
+#//	Cherub's		Req. Lv. 46	+(46-103) to Evasion Rating, +(30-36) to maximum Energy Shield	
+#//   Spirit's		Req. Lv. 69	+(105-241) to Evasion Rating, +(58-67) to maximum Energy Shield	
+#// 
+#//	Unfaltering		Req. Lv. 86	(101-110)% increased Energy Shield
+#//	
+#//   Scintillating	Req. Lv. 60	+(62-76) to maximum Energy Shield	
+#//   Incandescent	Req. Lv. 69	+(77-90) to maximum Energy Shield
+#//	
+#//   Fecund			Req. Lv. 64	+(90-99) to maximum Life	
+#//   Vigorous		Req. Lv. 73	+(100-109) to maximum Life	
+#//
+#//   Wicked			Req. Lv. 30	(18-22)% increased Global Physical Damage	
+#//   Cruel			Req. Lv. 60	(23-28)% increased Global Physical Damage	
+#//   Merciless		Req. Lv. 81	(29-33)% increased Global Physical Damage
+#//
+#//shield Suffix like a boots but...
+#//   of Variegation	Req. Lv. 48	+(12-14)% to all Elemental Resistances	
+#//   of the Rainbow	Req. Lv. 60	+(15-16)% to all Elemental Resistances	
+#//   of the Span		Req. Lv. 85	+(17-18)% to all Elemental Resistances
+#//   
+#//   of Talent		Req. Lv. 2	(5-7)% increased Cast Speed	
+#//   of Nimbleness	Req. Lv. 15	(8-10)% increased Cast Speed	
+#//   of Expertise	Req. Lv. 30	(11-13)% increased Cast Speed
+#// 
+#//   of Skill		Req. Lv. 1	(5-7)% increased Attack Speed	
+#//   of Ease			Req. Lv. 11	(8-10)% increased Attack Speed	
+#//   of Mastery		Req. Lv. 22	(11-13)% increased Attack Speed
+#//   
+#//   of Walling		Req. Lv. 58	+(4-6)% Chance to Block	
+#//   of Blocking		Req. Lv. 85	+(7-8)% Chance to Block
+#//   
+#//   of the Barrier	Req. Lv. 30	(7-9)% Chance to Block Spell Damage	
+#//   of the Bulwark	Req. Lv. 60	(10-12)% Chance to Block Spell Damage
+#//   
+#//   of Calamity		Req. Lv. 41	(60-79)% increased Critical Strike Chance for Spells	
+#//   of Ruin			Req. Lv. 59	(80-99)% increased Critical Strike Chance for Spells	
+#//   of Unmaking		Req. Lv. 76	(100-109)% increased Critical Strike Chance for Spells
+#//
+#//
+#//body armours Preffix    like a shield but...
+#//	Consecrated		Req. Lv. 73	+(243-300) to Armour, +(69-75) to maximum Energy Shield
+#//
+#//   Eidolon's		Req. Lv. 73	+(243-300) to Evasion Rating, +(69-75) to maximum Energy Shield  
+#//
+#//   Resplendent		Req. Lv. 75	+(91-100) to maximum Energy Shield
+#//   
+#//   Rapturous		Req. Lv. 81	+(110-119) to maximum Life	
+#//   Prime			Req. Lv. 86	+(120-129) to maximum Life
+#//   
+#//body armours Suffix like a boots
+#//
+#//
+#//belts Preffix
+#//   Incandescent	Req. Lv. 68	+(38-43) to maximum Energy Shield	
+#//   Resplendent		Req. Lv. 74	+(44-47) to maximum Energy Shield	
+#//   Dazzling		Req. Lv. 80	+(48-51) to maximum Energy Shield
+#//   
+#//	Virile			Req. Lv. 44	+(70-79) to maximum Life	
+#//	Athlete's		Req. Lv. 54	+(80-89) to maximum Life	
+#//	Fecund			Req. Lv. 64	+(90-99) to maximum Life
+#//
+#//   Carapaced		Req. Lv. 71	+(323-400) to Armour	
+#//   Encased			Req. Lv. 83	+(401-460) to Armour	
+#//   Enveloped		Req. Lv. 86	+(461-540) to Armour
+#//   
+#//   Unleashed		Req. Lv. 60	(31-36)% increased Elemental Damage with Attack Skills	
+#//   Overpowering	Req. Lv. 81	(37-42)% increased Elemental Damage with Attack Skills	
+#//   Devastating		Req. Lv. 86	(43-50)% increased Elemental Damage with Attack Skills
+#//   
+#//belts Suffix
+#//   of Refilling	Req. Lv. 2	(10-20)% increased Flask Charges gained	
+#//   of Overflowing	Req. Lv. 85	(21-30)% increased Flask Charges gained	
+#//   of Sipping		Req. Lv. 3	(20-10)% reduced Flask Charges used
+#//   of Savouring	Req. Lv. 7	(10-20)% increased Flask effect duration
+#//   
+#//   of the Titan	Req. Lv. 74	+(43-50) to Strength	
+#//   of the Gods		Req. Lv. 82	+(51-55) to Strength	
+#//   of the Godslayer Req. Lv. 85 +(56-60) to Strength
+#//   
+#//   of the Combatant Req. Lv. 44 (12-13)% reduced Enemy Stun Threshold	
+#//   of the Gladiator Req. Lv. 58 (14-15)% reduced Enemy Stun Threshold
+#//   of Slamming		Req. Lv. 44	(26-30)% increased Stun Duration on Enemies	
+#//   of Staggering	Req. Lv. 58	(31-35)% increased Stun Duration on Enemies
+#//
+#//Rings Preffix
+#//   Quintessential	Req. Lv. 50	+2 to Level of Socketed Gems	
+#//   Flawless		Req. Lv. 76	+3 to Level of Socketed Gems
+#//   
+#//   Empowering		Req. Lv. 30	(21-30)% increased Elemental Damage with Attack Skills	
+#//   Unleashed		Req. Lv. 60	(31-36)% increased Elemental Damage with Attack Skills	
+#//   Overpowering	Req. Lv. 81	(37-42)% increased Elemental Damage with Attack Skills
+#//   
+#//   Honed			Req. Lv. 28	Adds (4-6) to (9-10) Physical Damage to Attacks	
+#//   Gleaming		Req. Lv. 35	Adds (5-7) to (11-12) Physical Damage to Attacks	
+#//   Annealed		Req. Lv. 44	Adds (6-9) to (13-15) Physical Damage to Attacks
+#//   
+#//   Shocking		Req. Lv. 52	Adds (2-5) to (47-50) Lightning Damage to Attacks	
+#//   Discharging		Req. Lv. 64	Adds (3-6) to (57-61) Lightning Damage to Attacks	
+#//   Electrocuting	Req. Lv. 76	Adds (3-7) to (68-72) Lightning Damage to Attacks
+#//
+#//   Glaciated		Req. Lv. 53	Adds (12-16) to (24-28) Cold Damage to Attacks	
+#//   Polar			Req. Lv. 65	Adds (14-19) to (29-34) Cold Damage to Attacks	
+#//   Entombing		Req. Lv. 77	Adds (17-22) to (34-40) Cold Damage to Attacks
+#//
+#//   Incinerating	Req. Lv. 52	Adds (13-18) to (27-31) Fire Damage to Attacks	
+#//   Blasting		Req. Lv. 64	Adds (16-22) to (32-38) Fire Damage to Attacks	
+#//   Cremating		Req. Lv. 76	Adds (19-25) to (39-45) Fire Damage to Attacks
+#//   
+#//   Scintillating	Req. Lv. 59	+(32-37) to maximum Energy Shield	
+#//   Incandescent	Req. Lv. 68	+(38-43) to maximum Energy Shield	
+#//   Resplendent		Req. Lv. 74	+(44-47) to maximum Energy Shield
+#//   
+#//   Robust			Req. Lv. 30	+(50-59) to maximum Life	
+#//   Rotund			Req. Lv. 36	+(60-69) to maximum Life	
+#//   Virile			Req. Lv. 44	+(70-79) to maximum Life
+#//   
+#//   Blue			Req. Lv. 75	+(65-68) to maximum Mana	
+#//   Zaffre			Req. Lv. 81	+(69-73) to maximum Mana	
+#//   Ultramarine		Req. Lv. 85	+(74-78) to maximum Mana
+#//  
+#//Rings Suffix
+#//   of Skill		Req. Lv. 1	(5-7)% increased Attack Speed	
+#//   of Talent		Req. Lv. 2	(5-7)% increased Cast Speed
+#//
+#//   of Archaeology	Req. Lv. 53	(15-20)% increased Rarity of Items found	
+#//   of Excavation	Req. Lv. 75	(21-26)% increased Rarity of Items found	
+#//
+#//   of the Deadeye	Req. Lv. 50	+(201-250) to Accuracy Rating	
+#//   of the Ranger	Req. Lv. 63	+(251-320) to Accuracy Rating	
+#//   of the Assassin	Req. Lv. 76	+(321-400) to Accuracy Rating
+#//
+#//   of Shining		Req. Lv. 8	5% increased Light Radius, +(10-20) to Accuracy Rating	
+#//   of Light		Req. Lv. 15	10% increased Light Radius, +(21-40) to Accuracy Rating	
+#//   of Radiance		Req. Lv. 30	15% increased Light Radius, (5-10)% increased Global Accuracy Rating
+#//   
+#//   of Electricity	Req. Lv. 36	(13-17)% increased Lightning Damage	
+#//   of Voltage		Req. Lv. 50	(18-22)% increased Lightning Damage	
+#//   of Ice			Req. Lv. 36	(13-17)% increased Cold Damage	
+#//   of Rime			Req. Lv. 50	(18-22)% increased Cold Damage   
+#//   of Cinders		Req. Lv. 36	(13-17)% increased Fire Damage	
+#//   of Flames		Req. Lv. 50	(18-22)% increased Fire Damage	   
+#//
+#//   of the Maelstrom Req. Lv. 60 +(36-41)% to Lightning Resistance	
+#//   of the Lightning Req. Lv. 72 +(42-45)% to Lightning Resistance	
+#//   of Ephij		Req. Lv. 84	+(46-48)% to Lightning Resistance		
+#//
+#//   of the Polar Bear Req. Lv. 60 +(36-41)% to Cold Resistance	
+#//   of the Ice		Req. Lv. 72	+(42-45)% to Cold Resistance	
+#//   of Haast		Req. Lv. 84	+(46-48)% to Cold Resistance	 
+#//
+#//   of the Volcano	Req. Lv. 60	+(36-41)% to Fire Resistance	
+#//   of the Magma	Req. Lv. 72	+(42-45)% to Fire Resistance	
+#//   of Tzteosh		Req. Lv. 84	+(46-48)% to Fire Resistance   
+#//   
+#//   of Expulsion	Req. Lv. 56	+(21-25)% to Chaos Resistance	
+#//   of Exile		Req. Lv. 65	+(26-30)% to Chaos Resistance	
+#//   of Bameth		Req. Lv. 81	+(31-35)% to Chaos Resistance	
+#//   
+#//   of the Kaleidoscope	Req. Lv. 36	+(9-11)% to all Elemental Resistances	
+#//   of Variegation	Req. Lv. 48	+(12-14)% to all Elemental Resistances	
+#//   of the Rainbow	Req. Lv. 60	+(15-16)% to all Elemental Resistances	 	
+#//   	
+#//   of the Leviathan Req. Lv. 66 +(38-42) to Strength	
+#//   of the Titan	Req. Lv. 74	+(43-50) to Strength	
+#//   of the Gods		Req. Lv. 82	+(51-55) to Strength
+#//   
+#//   of the Jaguar	Req. Lv. 66	+(38-42) to Dexterity	
+#//   of the Phantom	Req. Lv. 74	+(43-50) to Dexterity	
+#//   of the Wind		Req. Lv. 82	+(51-55) to Dexterity	
+#//   
+#//   of the Savant	Req. Lv. 66	+(38-42) to Intelligence	
+#//   of the Virtuoso	Req. Lv. 74	+(43-50) to Intelligence	
+#//   of the Genius	Req. Lv. 82	+(51-55) to Intelligence	
+#//   
+#//   of the Meteor	Req. Lv. 22	+(9-12) to all Attributes	
+#//   of the Comet	Req. Lv. 33	+(13-16) to all Attributes

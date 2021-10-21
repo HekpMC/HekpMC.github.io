@@ -13,6 +13,8 @@
 [Ссылка](https://HekpMC.github.io/unsplash/dist/), [Репозиторий](https://github.com/HekpMC/HekpMC.github.io/tree/master/unsplash)
 
 
-## `Poe Filter 3.16`
+## `Poe Filter`
 
-[Фильтр](https://HekpMC.github.io/temp), [Синтаксис для Notepad++](https://HekpMC.github.io/poe_filter)
+[Синтаксис для Notepad++](https://HekpMC.github.io/poe_filter)
+
+[Фильтр 3.16](https://HekpMC.github.io/temp) 

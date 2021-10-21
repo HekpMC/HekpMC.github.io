@@ -204,7 +204,7 @@ Show
     SetTextColor 170 158 129
     SetBorderColor 170 158 129
     SetFontSize 40
-	MinimapIcon 2 White Kite
+	MinimapIcon 1 White Kite
 	PlayEffect White
 	PlayAlertSoundPositional 11 60	
 Show #//Delve currency
@@ -212,13 +212,13 @@ Show #//Delve currency
 	BaseType "Fossil" "Resonator"
     SetBorderColor 0 162 232
     SetFontSize 40
-	MinimapIcon 2 Orange Kite 
+	MinimapIcon 1 Orange Kite 
 	PlayEffect Orange 
 	PlayAlertSoundPositional 11 100
 Show
     Class "Metamorph Sample" 
     SetBorderColor 141 240 75
-	MinimapIcon 2 Green Kite 
+	MinimapIcon 1 Green Kite 
 	PlayEffect Green
 	PlayAlertSoundPositional 11 100
 Show #//Harbinger scrolls
@@ -232,7 +232,7 @@ Show #//Expedition
 	BaseType "Enkindling Orb" "Instilling Orb" "Exotic Coinage" "Scrap Metal" "Astragali" "Burial Medallion" "Artifact" "Expedition Logbook"
     SetBorderColor 129 178 244
     SetFontSize 40
-	MinimapIcon 2 Cyan Raindrop
+	MinimapIcon 1 Cyan Raindrop
 	PlayEffect Cyan 
 	PlayAlertSoundPositional 11 100
 Show #//Oil T1

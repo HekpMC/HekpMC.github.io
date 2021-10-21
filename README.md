@@ -15,6 +15,6 @@
 
 ## `Poe Filter`
 
-[Синтаксис для Notepad++](https://HekpMC.github.io/Syntax.xml)
+[Синтаксис для Notepad++](https://HekpMC.github.io/PoE/Syntax.xml)
 
-[Фильтр 3.16](https://HekpMC.github.io/BaseFilter_3_16.filter) 
+[Фильтр 3.16](https://HekpMC.github.io/PoE/BaseFilter_3_16.filter) 
